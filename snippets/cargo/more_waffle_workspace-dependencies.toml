@@ -1,0 +1,10 @@
+# Source: portal-co/more_waffle
+# Section: [workspace.dependencies]
+# Auto-generated - do not edit
+
+[workspace.dependencies]
+
+# waffle = {git="https://github.com/portal-co/waffle-.git",branch="pr/changes2"}
+portal-pc-waffle = {version="0.4.0"}
+
+

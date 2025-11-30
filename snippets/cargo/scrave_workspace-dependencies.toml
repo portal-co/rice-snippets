@@ -1,0 +1,7 @@
+# Source: portal-co/scrave
+# Section: [workspace.dependencies]
+# Auto-generated - do not edit
+
+[workspace.dependencies]
+image = "0.25.8"
+

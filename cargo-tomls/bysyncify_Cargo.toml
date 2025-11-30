@@ -1,0 +1,19 @@
+# Source: portal-co/bysyncify
+# Auto-generated - do not edit
+
+[package]
+name = "bysyncify"
+version = "0.2.6"
+edition = "2021"
+license = "CC0-1.0"
+description = "Bindings and a high-level interface to Binaryen's Asyncify"
+
+[dependencies]
+atomic-waker = "1.1.2"
+awaiter-trait = "^0.1.1"
+awaiter-trait-02 = {package="awaiter-trait",version="^0.2.7"}
+pin-project-lite = "0.2.16"
+
+
+[features]
+alloc=[]

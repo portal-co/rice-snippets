@@ -1,0 +1,5 @@
+# Hash: 4bddb1bbdacbf8a7f0eea9161ff8a8de52a19c8bcfb6cd01248d70f5382b5cf0
+# Sources: asim/workspace-dependencies/group04, vane/workspace-dependencies/group04
+# Auto-generated - do not edit
+
+portal-pc-asm-common = {version = "0.1.1",git = "https://github.com/portal-co/asm-common.git"}

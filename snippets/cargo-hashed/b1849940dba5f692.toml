@@ -1,0 +1,8 @@
+# Hash: b1849940dba5f692d77360f9fd55a388f0b3fde986a8f5252e34f3321e2c9fe8
+# Sources: jsaw/workspace-dependencies/group09
+# Auto-generated - do not edit
+
+typenum = "^1.18.0"
+bitflags = "^2.8.0"
+relooper = "^0.1.0"
+cityhasher = "^0.1.0"

@@ -1,0 +1,7 @@
+# Hash: 0a0669893d2c9e02260ba283ef344f9bacccc86b50f00a3c33a5add87b8d024d
+# Sources: soda/workspace-dependencies/group05
+# Auto-generated - do not edit
+
+wasmi = "0.31.1"
+wasm_runtime_layer = { version = "0.2.1", features = [ "backend_wasmi" ] }
+wasm-async-layer={path="./wasm-async-layer"}

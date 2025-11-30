@@ -1,0 +1,5 @@
+# Hash: 607feba683d706805c1b53638782d7b2f5d1f49f2285a14e04fd51f4c80b06d9
+# Sources: jsaw/workspace-dependencies/group02, waco/workspace-dependencies/group04
+# Auto-generated - do not edit
+
+portal-pc-waffle = {version="^0.5.5"}

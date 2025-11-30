@@ -1,0 +1,9 @@
+# Hash: 85972698478dd0ced998bc688b6ffd429324bb14bc2b1cd08bf7583170b147be
+# Sources: rage/workspace-dependencies/group03
+# Auto-generated - do not edit
+
+anyhow = "1.0.98"
+itertools = "0.14.0"
+once_map = "0.4.21"
+sha3 = "0.10.8"
+async-trait = "0.1.89"

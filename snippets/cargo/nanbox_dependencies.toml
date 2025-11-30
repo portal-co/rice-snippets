@@ -1,0 +1,8 @@
+# Source: portal-co/nanbox
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+dumpster = { version = "1.1.0", optional = true }
+spin = "0.10.0"
+

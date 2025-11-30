@@ -1,0 +1,31 @@
+# Source: portal-co/asm-common
+# Auto-generated - do not edit
+
+[package]
+name = "portal-pc-asm-common"
+version = "0.1.1"
+edition = "2021"
+description = "Common types and traits for assembly rewriting"
+license = "CC0-1.0"
+
+[dependencies]
+array-init = "2.1.0"
+bitvec = { version = "1.0.1", default-features = false }
+either = { version = "1.13.0", default-features = false, features = ["serde"] }
+embedded-io = { version = "0.6.1", default-features = false }
+
+enum-map = { version = "2.7.3", optional = true ,default-features = false }
+exhaust = { version = "0.2.1", optional = true,default-features = false  }
+itertools = { version = "0.14.0", default-features = false }
+no-error-type = { version = "0.1.1", features = ["embedded-io"] }
+
+serde = { version = "1.0.217", features = ["derive"], default-features = false, optional = true }
+sha3 = { version = "0.10.8", default-features = false, optional = true }
+
+[features]
+enum-map = ["dep:enum-map"]
+exhaust = ["dep:exhaust"]
+serde = ["dep:serde","bitvec/serde"]
+alloc = ["serde/alloc","exhaust/alloc","bitvec/alloc","embedded-io/alloc"]
+sha3 = ["dep:sha3"]
+ratchet = ["sha3"]

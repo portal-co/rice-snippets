@@ -1,0 +1,11 @@
+# Source: portal-co/amgo
+# Auto-generated - do not edit
+
+[package]
+name = "amgo"
+version = "0.1.0"
+edition = "2024"
+license = "CC0-1.0"
+description = "amogus mangling"
+
+[dependencies]

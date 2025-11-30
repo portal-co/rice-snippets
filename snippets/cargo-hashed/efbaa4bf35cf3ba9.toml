@@ -1,0 +1,6 @@
+# Hash: efbaa4bf35cf3ba9b8ecc5e61898b11d056a307469f45bb0c33416199f988f7e
+# Sources: awaiter-trait/dependencies/group01
+# Auto-generated - do not edit
+
+embedded-io-async = { version = "0.6.1", optional = true }
+embedded-io = { version = "0.6.1", optional = true }

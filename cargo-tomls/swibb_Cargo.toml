@@ -1,0 +1,50 @@
+# Source: portal-co/swibb
+# Auto-generated - do not edit
+
+[package]
+name = "portal-solutions-swibb"
+version = "0.5.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Utilities for rewriting JS for Weevy, Jsaw, Jsxx, DumbJS, and other JS processing tools"
+
+
+[features]
+test = ["swc_common/tty-emitter","sha3","hex"]
+encoding=["sha3","hex"]
+sha3 = ["dep:sha3"]
+hex = ["dep:hex"]
+rand = ["dep:rand"]
+
+
+[dependencies]
+hex = { version = "0.4.3", optional = true }
+rand = { version = "0.9.1", optional = true }
+sha3 = { version = "0.10.8", optional = true }
+swc_atoms.workspace = true
+swc_common.workspace = true
+swc_ecma_ast.workspace = true
+swc_ecma_parser.workspace = true
+swc_ecma_transforms_base.workspace = true
+swc_ecma_transforms_optimization.workspace = true
+swc_ecma_visit.workspace = true
+
+[workspace]
+members=["."]
+resolver="3"
+
+[workspace.dependencies]
+
+swc_atoms = "^8.0.0"
+swc_common = "^16.0.0"
+swc_ecma_ast = "^17.0.0"
+swc_ecma_compat_es2015 = "^32.0.0"
+swc_ecma_minifier = "^35.0.0"
+swc_ecma_transforms_base = "^29.0.0"
+swc_ecma_transforms_optimization = "^31.0.0"
+swc_ecma_utils = "^23.0.0"
+swc_ecma_visit = "^17.0.0"
+swc_bundler = "^34.0.0"
+swc_ecma_loader = "^16.0.0"
+swc_ecma_parser = "^26.0.0"
+swc_ecma_codegen = "^19"

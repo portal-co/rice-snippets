@@ -1,0 +1,7 @@
+# Hash: 5b0923b15480b7fb4e34ed5d2c4e366d976d30f14e9698ef235c62c50ff10d5b
+# Sources: soda/workspace-dependencies/group09
+# Auto-generated - do not edit
+
+ic-wasi-polyfill={git="https://github.com/wasm-forge/ic-wasi-polyfill.git"}
+nlj-core={path="./neeluj/nlj-core"}
+ic-cdk = "0.12.1"

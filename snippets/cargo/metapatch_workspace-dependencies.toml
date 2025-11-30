@@ -1,0 +1,7 @@
+# Source: portal-co/metapatch
+# Section: [workspace.dependencies]
+# Auto-generated - do not edit
+
+[workspace.dependencies]
+waffle={package="portal-pc-waffle",version="^0.5.5"}
+

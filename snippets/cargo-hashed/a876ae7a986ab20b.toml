@@ -1,0 +1,7 @@
+# Hash: a876ae7a986ab20bd288cacfc791ab1d63d00a871ea021b4af4e6f0ff4e36e45
+# Sources: gorf/workspace-dependencies/group03, rebornpack/workspace-dependencies/group04
+# Auto-generated - do not edit
+
+spin-sdk = "3.0.1"
+url = { version = "2", features = ["serde"] }
+dumpster = "0.1.2"

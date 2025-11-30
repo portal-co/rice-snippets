@@ -1,0 +1,10 @@
+# Hash: d30bfa9892009a0085dc4837d183c5877412ef68f63acd91ba47687a8ef9b87f
+# Sources: jsaw/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+portal-jsc-common =       {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}
+portal-jsc-swc-cfg =      {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}
+portal-jsc-swc-tac =      {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}
+portal-jsc-swc-ssa =      {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}
+portal-jsc-swc-opt-ssa =  {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}
+portal-jsc-swc-util =     {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}

@@ -1,0 +1,18 @@
+# Source: portal-co/arena-traits
+# Auto-generated - do not edit
+
+[package]
+name = "arena-traits"
+version = "0.2.3"
+edition = "2021"
+license = "CC0-1.0"
+description = "Traits for arenas"
+
+[dependencies]
+id-arena = { version = "2.2.1", optional = true }
+portal-solutions-id-arena = { version = "2.2.2", default-features = false, optional = true }
+
+[features]
+
+portal-solutions-id-arena = ["dep:portal-solutions-id-arena"]
+id-arena = ["dep:id-arena"]

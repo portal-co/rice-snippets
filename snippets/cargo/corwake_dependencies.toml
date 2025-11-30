@@ -1,0 +1,7 @@
+# Source: portal-co/corwake
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+externref = "0.2.0"
+

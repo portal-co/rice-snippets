@@ -1,0 +1,48 @@
+# Source: portal-co/waco
+# Section: [workspace.dependencies]
+# Auto-generated - do not edit
+
+[workspace.dependencies]
+px-llvm-codegen-utils-core={git="https://github.com/portal-co/llvm-codegen-utils.git",version="^0.1.5"}
+
+cranelift-frontend = "0.123.2"
+cranelift-codegen = "0.123.2"
+
+portal-jsc-common =   {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.9"}
+portal-jsc-swc-cfg =  {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.9"}
+portal-jsc-swc-tac =  {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.9"}
+portal-jsc-swc-ssa =  {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.9"}
+portal-jsc-swc-util = {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.9"}
+
+portal-pc-waffle = {version="^0.5.5"}
+
+id-arena = "^2.2.1"
+arena-traits = {version="^0.2.3",features=["id-arena"]}
+ssa-traits = "^0.2.3"
+cfg-traits = "^0.2.3"
+ssa-impls =  "^0.2.3"
+ssa-reloop = "^0.2.3"
+
+
+
+swc_atoms = "^7.0.0"
+swc_common = "^14.0.0"
+swc_ecma_ast = "^15.0.0"
+swc_ecma_compat_es2015 = "^26.0.0"
+swc_ecma_minifier = "^30.0.0"
+swc_ecma_transforms_base = "^25.0.0"
+swc_ecma_transforms_optimization = "^26.0.0"
+swc_ecma_utils = "^21.0.0"
+swc_ecma_visit = "^15.0.0"
+swc_bundler = "^29.0.0"
+swc_ecma_loader = "^14.0.0"
+swc_ecma_parser = "^23.0.0"
+swc_ecma_codegen = "^17"
+
+
+
+portal-solutions-swibb="^0.4.0"
+
+awaiter-trait = "0.2.8"
+
+

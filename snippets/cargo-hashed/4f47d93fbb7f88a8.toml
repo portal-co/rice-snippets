@@ -1,0 +1,8 @@
+# Hash: 4f47d93fbb7f88a853c55188fa752abc86f73d76503c6682d6aecfef07de60bc
+# Sources: bysyncify/dependencies/group01
+# Auto-generated - do not edit
+
+atomic-waker = "1.1.2"
+awaiter-trait = "^0.1.1"
+awaiter-trait-02 = {package="awaiter-trait",version="^0.2.7"}
+pin-project-lite = "0.2.16"

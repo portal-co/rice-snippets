@@ -1,0 +1,12 @@
+# Hash: 78d8de0d0080b889cd492cfdfeb23efd108dd5adad154a4e41af0b8983c4a7cc
+# Sources: soda/workspace-dependencies/group04
+# Auto-generated - do not edit
+
+serde = { version = "1.0", features = ["derive"] }
+simple-encryption={path="./simple-encryption"}
+whisk = "0.12.0"
+blitz-p2p={path="./blitz-p2p"}
+embedded-io-adapters = {version="0.6.1",features=["futures-03"]}
+more-waffle={path="./more-waffle"}
+waffle-ic={path="./waffle-ic"}
+postcard = {version="1.0.8",features=["alloc"]}

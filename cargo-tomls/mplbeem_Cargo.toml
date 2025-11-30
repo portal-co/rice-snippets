@@ -1,0 +1,12 @@
+# Source: portal-co/mplbeem
+# Auto-generated - do not edit
+
+[package]
+name = "mplbeem"
+version = "0.1.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Sync MPL-licensed projects"
+
+[dependencies]
+walkdir = "2.5.0"

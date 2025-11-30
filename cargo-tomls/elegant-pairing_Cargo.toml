@@ -1,0 +1,13 @@
+# Source: portal-co/elegant-pairing
+# Auto-generated - do not edit
+
+[package]
+name = "elegant-pairing"
+version = "0.1.1"
+edition = "2024"
+license = "MIT"
+description = "The elegant pairing function"
+
+[dependencies]
+num-integer = { version = "0.1.46", default-features = false }
+num-traits = { version = "0.2.19", default-features = false }

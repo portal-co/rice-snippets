@@ -1,0 +1,5 @@
+# Hash: 8ec8c3752264b3952dda115ff9b688ba6fa221f02c6bdb0d8deb8070f9c33302
+# Sources: gorf/workspace-dependencies/group10, rebornpack/workspace-dependencies/group10
+# Auto-generated - do not edit
+
+postcard = {version="1.0.8",features=["alloc","use-std"]}

@@ -1,0 +1,7 @@
+# Source: portal-co/shufl
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+heapless = "0.8.0"
+

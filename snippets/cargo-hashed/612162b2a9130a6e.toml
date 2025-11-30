@@ -1,0 +1,5 @@
+# Hash: 612162b2a9130a6e2168b9a79e2ba40a4c9df7b457ab2ca5ca4fd8b239d0ff00
+# Sources: soda/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+waffle = {git="https://github.com/portal-co/waffle-.git",branch="pr/changes2"}

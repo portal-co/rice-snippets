@@ -1,0 +1,7 @@
+# Source: portal-co/valser
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+either = { version = "1.13.0", default-features = false }
+

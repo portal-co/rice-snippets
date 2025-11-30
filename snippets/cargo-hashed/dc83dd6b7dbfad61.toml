@@ -1,0 +1,10 @@
+# Hash: dc83dd6b7dbfad610c8c7e4cafe6cb038b6f4341dd3ae777520005f21dec4cdf
+# Sources: gorf/workspace-dependencies/group17, rebornpack/workspace-dependencies/group18
+# Auto-generated - do not edit
+
+iced-x86 = {version="1.21.0",features=["code_asm"]}
+hyper = {version="1.2.0",features=["http1","server"]}
+hyper-util = {version="0.1.3",features=["http1","server","tokio"]}
+hyper-futures = "0.1.1"
+axum = "0.7.5"
+fix-hidden-lifetime-bug = "=0.2.2"

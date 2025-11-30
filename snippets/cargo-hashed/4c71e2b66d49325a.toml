@@ -1,0 +1,8 @@
+# Hash: 4c71e2b66d49325acdb893b230588520704fe621e98781844a2eb9bb1e4c89d2
+# Sources: gorf/workspace-dependencies/group02, rebornpack/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+webc = { version = "6.0.0-rc1", default-features = false, features = ["package"] }
+cxx = "1.0"
+noak="0.6.0"
+zip = "2.1.1"

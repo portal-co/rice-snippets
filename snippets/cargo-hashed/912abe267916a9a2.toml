@@ -1,0 +1,5 @@
+# Hash: 912abe267916a9a2ab76e687a0cb4cb2e36e92e2782423d436f38fbdfd120937
+# Sources: embedded-io-convert/dependencies/group01
+# Auto-generated - do not edit
+
+either = { version = "^1.13.0", default-features = false }

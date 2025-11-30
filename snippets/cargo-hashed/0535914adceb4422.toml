@@ -1,0 +1,6 @@
+# Hash: 0535914adceb442278a11338a72980e4d4496f1657dedd4c83f897718f03a1cf
+# Sources: rift/dev-dependencies/group01
+# Auto-generated - do not edit
+
+bitvec = "1.0.1"
+object = { version = "0.36.0", default-features = false, features = ["read", "elf"] }

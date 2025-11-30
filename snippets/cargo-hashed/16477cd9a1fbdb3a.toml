@@ -1,0 +1,5 @@
+# Hash: 16477cd9a1fbdb3a5a16bdb84aafbecd5575b1df02662c60a679a579894d525f
+# Sources: bf-beef/dependencies/group01
+# Auto-generated - do not edit
+
+either = { version = "1.15.0", default-features = false }

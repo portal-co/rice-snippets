@@ -1,0 +1,7 @@
+# Hash: 592bdbb4a22b78a997990238199c98ec0dbcd8cfa7dfd423a7572ee6096d28dd
+# Sources: trust-ident/dependencies/group01
+# Auto-generated - do not edit
+
+duplicate = "2.0.0"
+nom = {version="^8",default-features = false,features=["alloc"]}
+quickcheck = "1.0.3"

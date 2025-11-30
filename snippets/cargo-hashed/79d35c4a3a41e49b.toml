@@ -1,0 +1,5 @@
+# Hash: 79d35c4a3a41e49b41f74db3ce0c9546820718a55737b3eb93d651579f1cafed
+# Sources: portal-solutions-sky/dependencies/group01
+# Auto-generated - do not edit
+
+hex = { version = "0.4.3", default-features = false }

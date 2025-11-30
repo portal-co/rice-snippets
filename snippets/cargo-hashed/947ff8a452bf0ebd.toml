@@ -1,0 +1,14 @@
+# Hash: 947ff8a452bf0ebd2240b3b1223a6a73385c5666d7b670145c055b5bf23ed9e1
+# Sources: swibb/dependencies/group01
+# Auto-generated - do not edit
+
+hex = { version = "0.4.3", optional = true }
+rand = { version = "0.9.1", optional = true }
+sha3 = { version = "0.10.8", optional = true }
+swc_atoms.workspace = true
+swc_common.workspace = true
+swc_ecma_ast.workspace = true
+swc_ecma_parser.workspace = true
+swc_ecma_transforms_base.workspace = true
+swc_ecma_transforms_optimization.workspace = true
+swc_ecma_visit.workspace = true

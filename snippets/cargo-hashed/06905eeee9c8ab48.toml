@@ -1,0 +1,5 @@
+# Hash: 06905eeee9c8ab48fa0d692a0705fd6cbcbd2496d2ac004fcad6a9a96163a28d
+# Sources: asim/workspace-dependencies/group03, speet/workspace-dependencies/group02, wasm-blitz/workspace-dependencies/group02
+# Auto-generated - do not edit
+
+wax-core = {version = "0.1.0",git = "https://github.com/portal-co/wax.git",branch = "main"}

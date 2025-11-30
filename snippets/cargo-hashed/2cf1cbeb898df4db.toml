@@ -1,0 +1,5 @@
+# Hash: 2cf1cbeb898df4db056d20287a27867ab7eb698c06ea27cf13841472b0296ed9
+# Sources: gorf/workspace-dependencies/group15, rebornpack/workspace-dependencies/group16
+# Auto-generated - do not edit
+
+ic-cdk = "0.12.1"

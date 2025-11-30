@@ -1,0 +1,14 @@
+# Source: portal-co/stern-bijection
+# Auto-generated - do not edit
+
+[package]
+name = "stern-bijection"
+version = "0.1.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Stern's bijection between naturals and rationals"
+
+[dependencies]
+num-integer = { version = "0.1.46", default-features = false }
+num-rational = { version = "0.4.2", default-features = false }
+num-traits = { version = "0.2.19", default-features = false }

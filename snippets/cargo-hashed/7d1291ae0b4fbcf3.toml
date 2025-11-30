@@ -1,0 +1,6 @@
+# Hash: 7d1291ae0b4fbcf35765a5434c46cf37f46210a684c0c0d9712992d1464e8f4c
+# Sources: soda/workspace-dependencies/group03
+# Auto-generated - do not edit
+
+wappy-proto={path="./wappy/wappy-proto"}
+wappy-wasm={path="./wappy/wappy-wasm"}

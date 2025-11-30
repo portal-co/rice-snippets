@@ -1,0 +1,8 @@
+# Hash: 5aa59c9efbf2d8336151d4d50a4cbdf3b636d3617d9834b8a0943b39e438340a
+# Sources: static-async-concurrency/dependencies/group01
+# Auto-generated - do not edit
+
+futures = { version = "0.3.31", default-features = false }
+generic-array = "1.2.0"
+pin-project-lite = "0.2.16"
+typenum = "1.18.0"

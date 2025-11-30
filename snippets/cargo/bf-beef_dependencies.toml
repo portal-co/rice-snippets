@@ -1,0 +1,7 @@
+# Source: portal-co/bf-beef
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+either = { version = "1.15.0", default-features = false }
+

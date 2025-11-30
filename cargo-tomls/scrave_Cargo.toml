@@ -1,0 +1,13 @@
+# Source: portal-co/scrave
+# Auto-generated - do not edit
+
+[workspace]
+members = ["crates/scrave-glyph", "crates/scrave-glyph-image-generator"]
+resolver = "3"
+
+[workspace.package]
+license = "MPL-2.0"
+description = "Make the most of super-small screens"
+
+[workspace.dependencies]
+image = "0.25.8"

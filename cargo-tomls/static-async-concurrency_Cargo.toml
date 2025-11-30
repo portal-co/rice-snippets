@@ -1,0 +1,15 @@
+# Source: portal-co/static-async-concurrency
+# Auto-generated - do not edit
+
+[package]
+name = "static-async-concurrency"
+version = "0.0.1"
+edition = "2024"
+license = "MPL-2.0"
+description = "Static async concurrency"
+
+[dependencies]
+futures = { version = "0.3.31", default-features = false }
+generic-array = "1.2.0"
+pin-project-lite = "0.2.16"
+typenum = "1.18.0"

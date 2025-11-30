@@ -1,0 +1,16 @@
+# Hash: 230bae221fbf8d76353e27fa42d0e966d74b362ce74b4508f4a58ad9e8a41ccd
+# Sources: simple-encryption/dependencies/group01
+# Auto-generated - do not edit
+
+chacha20poly1305 = "0.10.1"
+rand = "0.8.5"
+thiserror = "1.0.64"
+x25519-dalek = "2.0.1"
+# chacha20poly1305.workspace = true
+# curve25519-dalek.workspace = true
+# ed25519-dalek.workspace = true
+# pqc_kyber.workspace = true
+# rand.workspace = true
+# rust-crypto.workspace = true
+# thiserror.workspace = true
+# x25519-dalek.workspace = true

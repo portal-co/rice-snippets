@@ -1,0 +1,8 @@
+# Hash: 36e0c6a01e981cddd758456bed00244089964980a5ed1cda3a2be5da62d9cfe4
+# Sources: talc/workspace-dependencies/group05
+# Auto-generated - do not edit
+
+swc-cfg = {package="portal-jsc-swc-cfg",version="0.2"}
+swc-tac = {package="portal-jsc-swc-tac",version="0.2"}
+swc-ssa = {package="portal-jsc-swc-ssa",version="0.2"}
+swc-opt-ssa = {package="portal-jsc-swc-opt-ssa",version="0.2"}

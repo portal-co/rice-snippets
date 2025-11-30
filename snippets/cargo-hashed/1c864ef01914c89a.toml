@@ -1,0 +1,6 @@
+# Hash: 1c864ef01914c89a6a5effd76ce25928c4cd869edbfb265cdef2cf13283fb386
+# Sources: vane/workspace-dependencies/group10
+# Auto-generated - do not edit
+
+wasm-bindgen = "0.2.100"
+spin = "0.10.0"

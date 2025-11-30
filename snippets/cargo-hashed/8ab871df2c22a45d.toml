@@ -1,0 +1,6 @@
+# Hash: 8ab871df2c22a45d9931c7993784ec55baa656f2833e03d45cdd8d4265f25498
+# Sources: talc/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+portal-pc-waffle = "0.3.8"
+waffle-ast = "0.4"

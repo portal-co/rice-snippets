@@ -1,0 +1,35 @@
+# Source: portal-co/wars-pit-plugin
+# Auto-generated - do not edit
+
+[package]
+name = "wars-pit-plugin"
+version = "0.7.0"
+edition = "2021"
+license = "CC0-1.0"
+description = "PIT plugin for WaRs"
+
+[dependencies]
+bitflags = "2.5.0"
+hex = "0.4.3"
+
+# portal-pc-waffle.workspace = true
+proc-macro2 = "1.0.85"
+quasiquote = "0.1.1"
+quote = "1.0.36"
+relooper = "0.1.0"
+sha3 = "0.10.8"
+syn = "2.0.66"
+# waffle-func-reloop = { version = "0.6.0", path = "../waffle-func-reloop" }
+# witx = {git="https://github.com/wasix-org/wasix-witx.git",branch="main"}
+
+# wars = { version = "0.6.0", path = "../wars" }
+anyhow = "1.0.93"
+portal-pc-waffle = "0.5.4"
+waffle-func-reloop = "0.7.0"
+wars = "0.7.0"
+pit-core = "0.4.2"
+pit-patch = "0.4.0"
+pit-rust-guest = "0.4.0"
+ # pit-core.workspace = true
+ # pit-patch.workspace = true
+ # pit-rust-guest.workspace = true

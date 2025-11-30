@@ -1,0 +1,78 @@
+# Source: portal-co/jsaw
+# Auto-generated - do not edit
+
+[workspace]
+members=[ "crates/jacon",   "crates/portal-jsc-mob-backend-common", "crates/portal-jsc-out-ir-core", "crates/portal-jsc-swift-backend",   "crates/swc-batch"]
+
+# "js-runtime-lib","swc-emit-rust","swc-waffle"
+
+resolver="2"
+
+[workspace.dependencies]
+
+portal-jsc-common =       {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}
+portal-jsc-swc-cfg =      {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}
+portal-jsc-swc-tac =      {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}
+portal-jsc-swc-ssa =      {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}
+portal-jsc-swc-opt-ssa =  {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}
+portal-jsc-swc-util =     {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.10"}
+
+portal-pc-waffle = {version="^0.5.5"}
+
+id-arena = "^2.2.1"
+arena-traits = {version="^0.2.3",features=["id-arena"]}
+ssa-traits = {version="^0.2.3",git="https://github.com/portal-co/codegen-utils.git",branch="master"}
+cfg-traits = {version="^0.2.3",git="https://github.com/portal-co/codegen-utils.git",branch="master"}
+ssa-impls =  {version="^0.2.3",git="https://github.com/portal-co/codegen-utils.git",branch="master"}
+ssa-reloop = {version="^0.2.3",git="https://github.com/portal-co/codegen-utils.git",branch="master"}
+
+ssa-traits-03 = { version = "0.3.0-alpha.2", package = "ssa-traits" ,git="https://github.com/portal-co/codegen-utils.git",branch="dev/0.3"}
+cfg-traits-03 = { version = "0.3.0-alpha.2", package = "cfg-traits" ,git="https://github.com/portal-co/codegen-utils.git",branch="dev/0.3"}
+ssa-impls-03 =  { version = "0.3.0-alpha.2", package = "ssa-impls"  ,git="https://github.com/portal-co/codegen-utils.git",branch="dev/0.3"}
+ssa-reloop-03 = { version = "0.3.0-alpha.2", package = "ssa-reloop" ,git="https://github.com/portal-co/codegen-utils.git",branch="dev/0.3"}
+
+
+
+swc_atoms = "^8.0.0"
+swc_common = "^16.0.0"
+swc_ecma_ast = "^17.0.0"
+swc_ecma_compat_es2015 = "^32.0.0"
+swc_ecma_minifier = "^35.0.0"
+swc_ecma_transforms_base = "^29.0.0"
+swc_ecma_transforms_optimization = "^31.0.0"
+swc_ecma_utils = "^23.0.0"
+swc_ecma_visit = "^17.0.0"
+swc_bundler = "^34.0.0"
+swc_ecma_loader = "^16.0.0"
+swc_ecma_parser = "^26.0.0"
+swc_ecma_codegen = "^19"
+
+
+
+portal-solutions-swibb={version="^0.5.0",git="https://github.com/portal-co/swibb.git"}
+
+
+anyhow = "^1.0.87"
+bimap = "^0.6.3"
+
+
+
+proc-macro2 = "^1.0.88"
+quasiquote = "^0.1.1"
+quote = "^1.0.37"
+syn = "^2.0.82"
+
+typenum = "^1.18.0"
+bitflags = "^2.8.0"
+relooper = "^0.1.0"
+cityhasher = "^0.1.0"
+
+
+px-llvm-codegen-utils-core="^0.1.4"
+px-llvm-codegen-utils-info="^0.1.4"
+portal-pc-asm-common = "^0.1.0"
+
+bitvec = "^1.0.1"
+instability = "^0.3.7"
+linearize = "^0.1.4"
+linearize-derive = "^0.1.0"

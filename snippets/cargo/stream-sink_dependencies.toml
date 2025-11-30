@@ -1,0 +1,11 @@
+# Source: portal-co/stream-sink
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+futures-core = { version = "0.3.30", default-features = false }
+futures-sink = { version = "0.3.30", default-features = false }
+
+
+pin-project = "1.1.5"
+

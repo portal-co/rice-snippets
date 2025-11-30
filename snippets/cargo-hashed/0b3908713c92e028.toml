@@ -1,0 +1,6 @@
+# Hash: 0b3908713c92e02876bf61b52fb2dde29b694ab1b86d1ffab9c5c11be032529c
+# Sources: nanbox/dependencies/group01
+# Auto-generated - do not edit
+
+dumpster = { version = "1.1.0", optional = true }
+spin = "0.10.0"

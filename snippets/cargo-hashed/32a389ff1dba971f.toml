@@ -1,0 +1,6 @@
+# Hash: 32a389ff1dba971fbd095ee87347a19a74db805ee34e53185670f4cd1248f161
+# Sources: wars2/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+waffle = { package = "portal-pc-waffle", version = "^0.5.5" }
+wasmparser = "0.240.0"

@@ -1,0 +1,7 @@
+# Hash: 4b35391fc5978b6d0503a9dc084b82da8a61c8a618d1e732f69bbb90fde418cb
+# Sources: blang/dependencies/group01
+# Auto-generated - do not edit
+
+rand = "0.9.2"
+rand_chacha = "0.9.0"
+sha3 = "0.10.8"

@@ -1,0 +1,15 @@
+# Hash: 6d46d4bc7dd65fb1e5b53d729710aa3456f704131e0f94587d606197ab1d50e8
+# Sources: jsaw-core/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+swc-cfg = { version = "^0.8.0-pre.10", path = "crates/swc-cfg", package = "portal-jsc-swc-cfg" }
+swc-tac = { version = "^0.8.0-pre.10", path = "crates/swc-tac", package = "portal-jsc-swc-tac" }
+swc-ll-common = { version = "^0.8.0-pre.10", path = "crates/swc-ll-common", package = "portal-jsc-swc-ll-common" }
+swc-ssa = { version = "^0.8.0-pre.10", path = "crates/swc-ssa", package = "portal-jsc-swc-ssa" }
+portal-jsc-swc-util = { version = "^0.8.0-pre.10", path = "crates/swc-util", features = [
+    "ty",
+] }
+portal-jsc-simpl-js = { version = "^0.8.0-pre.10", path = "crates/simpl-js", features = [
+   
+] }
+portal-jsc-common = { version = "^0.8.0-pre.10", path = "crates/portal-jsc-common" }

@@ -1,0 +1,9 @@
+# Hash: 24c43b8ee9ae89444dbf4a2e20d295c8523688d5783a34daaaa75e3c0adefab2
+# Sources: talc/workspace-dependencies/group02
+# Auto-generated - do not edit
+
+arena-traits = { version = "0.2.1", features = ["id-arena"] }
+cfg-traits = "0.2.1"
+id-arena = "2.2.1"
+ssa-traits = "0.2.1"
+ssa-impls = "0.2.1"

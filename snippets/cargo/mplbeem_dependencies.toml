@@ -1,0 +1,7 @@
+# Source: portal-co/mplbeem
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+walkdir = "2.5.0"
+

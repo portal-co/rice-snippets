@@ -1,0 +1,6 @@
+# Source: portal-co/codegen-utils-common
+# Auto-generated - do not edit
+
+[workspace]
+members=["onion","sift-trait"]
+resolver="3"

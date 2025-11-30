@@ -1,0 +1,8 @@
+# Hash: 58f9cad5fd84134e38b7a3e1d2692d7b29f2fe3edf4922ce33dafa6331cd1481
+# Sources: asm-common/dependencies/group02
+# Auto-generated - do not edit
+
+enum-map = { version = "2.7.3", optional = true ,default-features = false }
+exhaust = { version = "0.2.1", optional = true,default-features = false  }
+itertools = { version = "0.14.0", default-features = false }
+no-error-type = { version = "0.1.1", features = ["embedded-io"] }

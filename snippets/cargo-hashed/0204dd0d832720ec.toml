@@ -1,0 +1,11 @@
+# Hash: 0204dd0d832720ecf51d29126310251c252e96ba7be5e0d2ecf57692ab2ebf89
+# Sources: portal-solutions-sdk/dependencies/group01
+# Auto-generated - do not edit
+
+hex = { version = "0.4.3", default-features = false, features = ["alloc"] }
+instability = "0.3.7"
+itertools = { version = "0.14.0", default-features = false, features = ["use_alloc"] }
+nom = { version = "8.0.0", default-features = false, features = ["alloc"] }
+pit-core = {version="^0.4.8",git = "https://github.com/portal-co/pit-core.git" }
+sha3 = { version = "0.10.8", default-features = false }
+spin = "0.10.0"

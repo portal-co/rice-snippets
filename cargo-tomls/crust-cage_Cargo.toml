@@ -1,0 +1,16 @@
+# Source: portal-co/crust-cage
+# Auto-generated - do not edit
+
+[workspace]
+members=["crates/crust-cage-compiler", "crates/crust-cage-rt"]
+resolver="3"
+
+[workspace.package]
+license = "MPL-2.0"
+description = "Crust to safe Rust sandboxer, similar to wars(2)"
+
+[workspace.dependencies]
+prettyplease = "0.2.37"
+proc-macro2 = "1.0.103"
+quote = "1.0.41"
+syn = "2.0.108"

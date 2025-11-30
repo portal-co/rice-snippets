@@ -1,0 +1,6 @@
+# Hash: 154baa3c2e044d8a89bd6722904c415bdde331c5facc6bced94dbd3404c13c6d
+# Sources: gorf/workspace-dependencies/group04, rebornpack/workspace-dependencies/group05
+# Auto-generated - do not edit
+
+ipld-core = {version="0.4.1",features=["serde"]}
+cid = "0.11.1"

@@ -1,0 +1,10 @@
+# Hash: c22bd8b11aff623ae53ce4dec11de384d0d4400ec30ed658096bc944a05c22d0
+# Sources: vane/workspace-dependencies/group06
+# Auto-generated - do not edit
+
+id-arena = "^2.2.1"
+arena-traits = { version = "^0.2.3", features = ["id-arena"] }
+ssa-traits = "^0.2.3"
+cfg-traits = "^0.2.3"
+ssa-impls = "^0.2.3"
+ssa-reloop = "^0.2.3"

@@ -1,0 +1,7 @@
+# Hash: 8b2490860a34373eb6f32a3019bfd0f9ff7cbfb21ebfc7526c252d592a633cdc
+# Sources: rv-utils/dev-dependencies/group01
+# Auto-generated - do not edit
+
+object = "0.36.7"
+rayon = "1.10.0"
+tempfile = "3.19.1"

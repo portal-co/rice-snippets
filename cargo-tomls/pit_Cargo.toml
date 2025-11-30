@@ -1,0 +1,31 @@
+# Source: portal-co/pit
+# Auto-generated - do not edit
+
+[workspace]
+members = [
+    "crates/pit-basic",
+    "crates/pit-c",
+    "crates/pit-patch",
+    "crates/pit-rust-externref",
+    "crates/pit-rust-generator",
+    "crates/pit-rust-guest",
+    "crates/pit-rust-host-lib",
+    "crates/pit-teavm",
+    "crates/tpit-rt",
+    "crates/pit-cli",
+    "crates/pit-rust-host",
+    "crates/pit-wit-bridge", "crates/pit-rust-host-core",
+]
+resolver = "2"
+
+# "pit-core","pit-rust-host","pit-wit-bridge", "pit-cli",
+
+[workspace.package]
+license = "CC0-1.0"
+description = "Portal Interface Types"
+
+[workspace.dependencies]
+portal-pc-waffle = "^0.5"
+# waffle-ast = "0.4"
+pit-core = { version = "^0.4.2", git = "https://github.com/portal-co/pit-core.git" }
+instability = "0.3.7"

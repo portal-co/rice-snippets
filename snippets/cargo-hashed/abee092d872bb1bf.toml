@@ -1,0 +1,5 @@
+# Hash: abee092d872bb1bf86fbc40b065eda0296d463375d1799caac1811987bc25249
+# Sources: gorf/workspace-dependencies/group07
+# Auto-generated - do not edit
+
+serde = { version = "1.0", features = ["derive","alloc"], default-features = false }

@@ -1,0 +1,7 @@
+# Hash: 50f47ba8089a7fabef45b22d4a4c3dfaed26bb0a3328fea0ab93ca6d9aeab5f4
+# Sources: rage/workspace-dependencies/group04
+# Auto-generated - do not edit
+
+proc-macro2 = { version = "^1.0.95", features = ["span-locations"] }
+syn = { version = "^2.0.104", features = ["full"] }
+quote = "^1.0.40"

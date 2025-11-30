@@ -1,0 +1,9 @@
+# Hash: 898cf0e81dd73b2bd68cd7ac31b649827cd7470c9f51eadb323fbfd9bec4be3f
+# Sources: waco/workspace-dependencies/group03
+# Auto-generated - do not edit
+
+portal-jsc-common =   {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.9"}
+portal-jsc-swc-cfg =  {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.9"}
+portal-jsc-swc-tac =  {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.9"}
+portal-jsc-swc-ssa =  {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.9"}
+portal-jsc-swc-util = {git="https://github.com/portal-co/jsaw-core.git",version="^0.8.0-pre.9"}

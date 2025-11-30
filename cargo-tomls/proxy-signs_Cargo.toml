@@ -1,0 +1,11 @@
+# Source: portal-co/proxy-signs
+# Auto-generated - do not edit
+
+[package]
+name = "portal-solutions-proxy-signs"
+version = "0.1.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Globals an ECMAScript proxy environment might have"
+
+[dependencies]

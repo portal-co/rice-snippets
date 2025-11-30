@@ -1,0 +1,24 @@
+# Source: portal-co/codegen-utils
+# Auto-generated - do not edit
+
+[workspace]
+members = [
+    "crates/ssa-traits",
+    "crates/ssa-impls",
+    "crates/ssa-translation",
+    "crates/ssa-reloop",
+    "crates/ssa-cc",
+    "crates/ssa-canon",
+    "crates/sift-trait",
+    "crates/ssa-rust",
+    "crates/cfg-traits",
+    "crates/register-machine-traits",
+    "crates/tac-traits",
+    "crates/onion",
+] # , "ssa-trace"
+resolver = "2"
+
+[workspace.dependencies]
+
+
+id-arena = "2.2.1"

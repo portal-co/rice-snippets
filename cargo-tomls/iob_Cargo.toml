@@ -1,0 +1,11 @@
+# Source: portal-co/iob
+# Auto-generated - do not edit
+
+[package]
+name = "iob"
+version = "0.0.1"
+edition = "2024"
+license = "MPL-2.0"
+description = "Input-Output buffers for in-place construction"
+
+[dependencies]

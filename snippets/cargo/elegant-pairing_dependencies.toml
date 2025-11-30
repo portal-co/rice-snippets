@@ -1,0 +1,8 @@
+# Source: portal-co/elegant-pairing
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+num-integer = { version = "0.1.46", default-features = false }
+num-traits = { version = "0.2.19", default-features = false }
+

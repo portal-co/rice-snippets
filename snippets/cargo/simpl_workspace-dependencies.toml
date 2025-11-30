@@ -1,0 +1,7 @@
+# Source: portal-co/simpl
+# Section: [workspace.dependencies]
+# Auto-generated - do not edit
+
+[workspace.dependencies]
+portal-pc-waffle="0.3.5"
+

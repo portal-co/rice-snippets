@@ -1,0 +1,9 @@
+# Source: portal-co/rv-utils
+# Section: [dev-dependencies]
+# Auto-generated - do not edit
+
+[dev-dependencies]
+object = "0.36.7"
+rayon = "1.10.0"
+tempfile = "3.19.1"
+

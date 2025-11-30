@@ -1,0 +1,6 @@
+# Hash: d4d0bb89a2046d6b8c142546b249afee1159ac7b97c3abecf163b2496b5ec83f
+# Sources: speet/workspace-dependencies/group01, wasm-blitz/workspace-dependencies/group01, wax/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+wasmparser = { version = "0.240.0", default-features = false }
+wasm-encoder = { version = "0.240.0", default-features = false,features = ["wasmparser"] }

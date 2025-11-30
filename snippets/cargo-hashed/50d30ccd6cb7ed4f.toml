@@ -1,0 +1,14 @@
+# Hash: 50d30ccd6cb7ed4fa9f8463e8891df44630d8f5da3b76175e8d16a81a29f5f0f
+# Sources: portal-solutions-ai-interface/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+extism-pdk = "1.1.0"
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+base64-serde = "0.7"
+base64 = "0.21"
+boa_engine = "0.20.0"
+anyhow = "1.0.100"
+wasm-bindgen = "0.2.104"
+wasm-bindgen-futures = "0.4.54"

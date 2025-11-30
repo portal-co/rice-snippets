@@ -1,0 +1,8 @@
+# Hash: c34bd76233ea9ff52c28f331541aa15c632b894e643fff050e7fe080c1cba34f
+# Sources: asm-common/dependencies/group01
+# Auto-generated - do not edit
+
+array-init = "2.1.0"
+bitvec = { version = "1.0.1", default-features = false }
+either = { version = "1.13.0", default-features = false, features = ["serde"] }
+embedded-io = { version = "0.6.1", default-features = false }

@@ -1,0 +1,5 @@
+# Hash: e37e7ee8686f239ed7325b663d80b4e7cfc0acfe2393658fc5b0a07d4d60c305
+# Sources: shufl/dependencies/group01
+# Auto-generated - do not edit
+
+heapless = "0.8.0"

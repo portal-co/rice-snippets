@@ -1,0 +1,6 @@
+# Hash: 1587fe7d290852e76bb960ab77b5f944d4460f870866288ae1ca7a4461745331
+# Sources: wars-pit-plugin/dependencies/group01
+# Auto-generated - do not edit
+
+bitflags = "2.5.0"
+hex = "0.4.3"

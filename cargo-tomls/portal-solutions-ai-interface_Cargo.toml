@@ -1,0 +1,39 @@
+# Source: portal-co/portal-solutions-ai-interface
+# Auto-generated - do not edit
+
+[package]
+name = "portal-solutions-ai-interface"
+version = "0.1.0"
+edition = "2021"
+
+
+
+[workspace]
+members = [".","xtp"]
+resolver = "3"
+
+[workspace.dependencies]
+extism-pdk = "1.1.0"
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+base64-serde = "0.7"
+base64 = "0.21"
+boa_engine = "0.20.0"
+anyhow = "1.0.100"
+wasm-bindgen = "0.2.104"
+wasm-bindgen-futures = "0.4.54"
+
+
+[dependencies]
+anyhow.workspace = true
+boa_engine.workspace = true
+either = "1.15.0"
+
+serde.workspace = true
+serde_json.workspace = true
+wasm-bindgen = {workspace = true,optional = true}
+wasm-bindgen-futures = {workspace = true,optional = true}
+
+[features]
+wasm-bindgen = ["dep:wasm-bindgen","dep:wasm-bindgen-futures"]

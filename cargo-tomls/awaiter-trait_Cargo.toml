@@ -1,0 +1,19 @@
+# Source: portal-co/awaiter-trait
+# Auto-generated - do not edit
+
+[package]
+name = "awaiter-trait"
+version = "0.2.8"
+edition = "2024"
+license = "CC0-1.0"
+description = "Traits for blocking on futures"
+
+[dependencies]
+embedded-io-async = { version = "0.6.1", optional = true }
+embedded-io = { version = "0.6.1", optional = true }
+
+[features]
+embedded-io = ["dep:embedded-io-async","dep:embedded-io"]
+
+[workspace]
+members=[".", "corosensei-awaiter-trait"]

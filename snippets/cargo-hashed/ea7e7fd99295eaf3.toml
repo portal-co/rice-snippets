@@ -1,0 +1,5 @@
+# Hash: ea7e7fd99295eaf3a085331a38e2a86343417f4d152ea58c281971618bcb07a0
+# Sources: corki/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+wasm-bindgen = {version="^0.2.100",default-features=false}

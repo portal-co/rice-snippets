@@ -1,0 +1,6 @@
+# Hash: 7d415883c770c1931307b9d74eede3ed53e504b6c6e868c587ac8354ffb06793
+# Sources: gorf/workspace-dependencies/group09, rebornpack/workspace-dependencies/group09
+# Auto-generated - do not edit
+
+embedded-io-adapters = {version="0.6.1",features=["futures-03"]}
+# more-waffle={path="./ratpack/more-waffle"}

@@ -1,0 +1,5 @@
+# Hash: 48a178d06385ca8f11c17451643da59d2fb6775420b29ebc563e6a8eb2e2a043
+# Sources: metapatch/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+waffle={package="portal-pc-waffle",version="^0.5.5"}

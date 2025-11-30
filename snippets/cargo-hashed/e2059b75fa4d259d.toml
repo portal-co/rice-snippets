@@ -1,0 +1,6 @@
+# Hash: e2059b75fa4d259d3bd03e727659f3a5dcc1c13b8bf8d88516febe33a8a21284
+# Sources: arena-traits/dependencies/group01
+# Auto-generated - do not edit
+
+id-arena = { version = "2.2.1", optional = true }
+portal-solutions-id-arena = { version = "2.2.2", default-features = false, optional = true }

@@ -1,0 +1,7 @@
+# Hash: 241f0dd2fa4d77324fcfe2699c2f4356b59b0d09b7c1227c45ae93bc70a23c39
+# Sources: embedded-chacha/dependencies/group01
+# Auto-generated - do not edit
+
+chacha20 = { version = "0.9.1", default-features = false }
+embedded-io = { version = "0.6.1", default-features = false }
+embedded-io-async = { version = "0.6.1", default-features = false }

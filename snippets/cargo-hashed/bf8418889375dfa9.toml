@@ -1,0 +1,11 @@
+# Hash: bf8418889375dfa925c577b23fe5a55966070acdb5a67c7d93dd1d89632a50c4
+# Sources: sh-secgen/dependencies/group01
+# Auto-generated - do not edit
+
+# ed25519-dalek = {version="2.1.1",features=["rand_core"]}
+falcon-rust = "0.1.2"
+rand = "0.8.5"
+slh-dsa = "0.0.3"
+x-wing = "0.0.1-pre.1"
+signature = "^2.2"
+ed25519 = "2.2"

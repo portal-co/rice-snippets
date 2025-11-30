@@ -1,0 +1,10 @@
+# Hash: b991a9e06f2c0b911eb26a3cedb8603baa87bab934331f58ddc0906d54604c74
+# Sources: pit-core/dependencies/group01
+# Auto-generated - do not edit
+
+base64 = { version = "0.22.1", default-features = false, features = ["alloc"] }
+derive_more = { version = "2", default-features = false, features = ["display"] }
+hex = { version = "0.4.3", default-features = false, features = ["alloc"] }
+instability = "0.3.7"
+nom = { version = "8", default-features = false, features = ["alloc"] }
+sha3 = { version = "0.10.8", default-features = false }

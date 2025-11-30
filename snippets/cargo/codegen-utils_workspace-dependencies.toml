@@ -1,0 +1,9 @@
+# Source: portal-co/codegen-utils
+# Section: [workspace.dependencies]
+# Auto-generated - do not edit
+
+[workspace.dependencies]
+
+
+id-arena = "2.2.1"
+

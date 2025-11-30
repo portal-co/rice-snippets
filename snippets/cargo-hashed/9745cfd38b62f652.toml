@@ -1,0 +1,7 @@
+# Hash: 9745cfd38b62f65264289dd8c5bc95b59febd17094d3d932244bce353df11650
+# Sources: embedded-packet-io/dependencies/group01
+# Auto-generated - do not edit
+
+embedded-io = { version = "0.6.1", default-features = false }
+embedded-io-async = { version = "0.6.1", default-features = false }
+heapless = "0.8.0"
