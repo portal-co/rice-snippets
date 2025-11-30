@@ -1,0 +1,8 @@
+# Source: portal-co/arena-traits
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+id-arena = { version = "2.2.1", optional = true }
+portal-solutions-id-arena = { version = "2.2.2", default-features = false, optional = true }
+

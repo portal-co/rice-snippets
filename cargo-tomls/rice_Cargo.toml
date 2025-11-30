@@ -1,0 +1,12 @@
+# Source: portal-co/rice
+# Auto-generated - do not edit
+
+[package]
+name = "rice"
+version = "0.1.0"
+edition = "2024"
+description = "Splice dependency or AI agent files to easily install components"
+license = "MPL-2.0"
+repository = "https://github.com/portal-co/rice.git"
+
+[dependencies]

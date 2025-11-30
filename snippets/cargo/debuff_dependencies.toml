@@ -1,0 +1,7 @@
+# Source: portal-co/debuff
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+sha3 = { version = "0.10.8", default-features = false }
+

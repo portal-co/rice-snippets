@@ -1,0 +1,14 @@
+# Source: portal-co/portal-solutions-ai-interface
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+anyhow.workspace = true
+boa_engine.workspace = true
+either = "1.15.0"
+
+serde.workspace = true
+serde_json.workspace = true
+wasm-bindgen = {workspace = true,optional = true}
+wasm-bindgen-futures = {workspace = true,optional = true}
+

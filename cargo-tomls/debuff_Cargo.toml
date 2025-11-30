@@ -1,0 +1,12 @@
+# Source: portal-co/debuff
+# Auto-generated - do not edit
+
+[package]
+name = "portal-solutions-debuff"
+version = "0.1.0"
+edition = "2024"
+license = "CC0-1.0"
+description = "Implementation of repeated request debuffing"
+
+[dependencies]
+sha3 = { version = "0.10.8", default-features = false }

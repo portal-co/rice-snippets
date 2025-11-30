@@ -1,0 +1,6 @@
+# Source: portal-co/mx6502
+# Auto-generated - do not edit
+
+[workspace]
+members=["assembler","model"]
+resolver="3"

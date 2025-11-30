@@ -1,0 +1,7 @@
+# Source: portal-co/fmt-fix
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+walkdir = "2.5.0"
+

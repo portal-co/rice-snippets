@@ -1,0 +1,16 @@
+# Source: portal-co/boople
+# Auto-generated - do not edit
+
+[package]
+name = "portal-solutions-boople"
+version = "0.1.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "One-off recreation of a state managemnt system for devices with limited input"
+
+[dependencies]
+
+[features]
+unsize=[]
+alloc=["unsize"]
+allocator-api=["alloc"]

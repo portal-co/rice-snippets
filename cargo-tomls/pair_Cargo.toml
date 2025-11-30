@@ -1,0 +1,33 @@
+# Source: portal-co/pair
+# Auto-generated - do not edit
+
+[package]
+name = "portal-ir"
+version = "0.2.0"
+edition = "2021"
+authors = ["gkgoat","Portal Computer"]
+description = "Portal Alterable IR"
+repository = "https://github.com/portal-co/pair"
+license = "MIT OR Apache-2.0" # This license supercedes the absence of one in the repository
+keywords = ["ssa","ir"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.77"
+either = "1.9.0"
+id-arena = "2.2.1"
+proc-macro2 = {version="1.0.71",optional=true}
+quote = {version="1.0.33",optional=true}
+relooper = "0.1.0"
+serde = {version="1.0.193",optional=true}
+syn = {version="2.0.43",optional=true}
+waffle = {version="0.0.22",optional=true}
+
+[features]
+waffle = ["dep:waffle"]
+rust = ["dep:quote","dep:syn","dep:proc-macro2"]
+serde = ["dep:serde","serde/derive"]
+
+[package.metadata."docs.rs"]
+all-features = true

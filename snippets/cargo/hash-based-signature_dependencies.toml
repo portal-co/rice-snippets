@@ -1,0 +1,13 @@
+# Source: portal-co/hash-based-signature
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+digest = { version = "0.10.7", default-features = false }
+embedded-io = { version = "0.6.1", optional = true }
+embedded-io-async = { version = "0.6.1", optional = true }
+generic-array = { version = "0.14.7", default-features = false }
+serde = { version = "1.0.217", default-features = false, features = ["derive"], optional = true }
+signature = { version = "2.2.0", default-features = false }
+typenum = { version = "1.17.0", default-features = false }
+

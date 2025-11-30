@@ -1,0 +1,10 @@
+# Source: portal-co/fmt-fix
+# Auto-generated - do not edit
+
+[package]
+name = "portal-solutions-fmt-fix"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+walkdir = "2.5.0"

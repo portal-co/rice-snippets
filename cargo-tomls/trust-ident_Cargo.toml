@@ -1,0 +1,14 @@
+# Source: portal-co/trust-ident
+# Auto-generated - do not edit
+
+[package]
+name = "trust-ident"
+version = "0.1.0"
+edition = "2024"
+license = "CC0-1.0"
+description = "Mangler for identifiers"
+
+[dependencies]
+duplicate = "2.0.0"
+nom = {version="^8",default-features = false,features=["alloc"]}
+quickcheck = "1.0.3"

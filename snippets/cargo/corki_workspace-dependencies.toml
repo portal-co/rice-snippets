@@ -1,0 +1,6 @@
+# Source: portal-co/corki
+# Section: [workspace.dependencies]
+# Auto-generated - do not edit
+
+[workspace.dependencies]
+wasm-bindgen = {version="^0.2.100",default-features=false}

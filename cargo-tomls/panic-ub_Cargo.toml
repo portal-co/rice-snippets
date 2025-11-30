@@ -1,0 +1,16 @@
+# Source: portal-co/panic-ub
+# Auto-generated - do not edit
+
+[package]
+name = "panic-ub"
+version = "0.0.0"
+edition = "2024"
+license = "CC0-1.0"
+description = "Panic? What panic?"
+
+[dependencies]
+
+[features]
+enabled=[]
+force=["enabled"]
+default=["enabled"]

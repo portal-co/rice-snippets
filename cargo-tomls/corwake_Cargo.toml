@@ -1,0 +1,12 @@
+# Source: portal-co/corwake
+# Auto-generated - do not edit
+
+[package]
+name = "corwake"
+version = "0.1.0"
+edition = "2024"
+license = "CC0-1.0"
+description = "Wakers in WASM"
+
+[dependencies]
+externref = "0.2.0"

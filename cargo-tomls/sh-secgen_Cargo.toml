@@ -1,0 +1,18 @@
+# Source: portal-co/sh-secgen
+# Auto-generated - do not edit
+
+[package]
+name = "sh-secgen"
+version = "0.2.2"
+edition = "2021"
+license = "CC0-1.0"
+description = "secret key generator"
+
+[dependencies]
+# ed25519-dalek = {version="2.1.1",features=["rand_core"]}
+falcon-rust = "0.1.2"
+rand = "0.8.5"
+slh-dsa = "0.0.3"
+x-wing = "0.0.1-pre.1"
+signature = "^2.2"
+ed25519 = "2.2"

@@ -1,0 +1,9 @@
+# Source: portal-co/portal-core
+# Auto-generated - do not edit
+
+[workspace]
+
+members = [
+    "tools/wasm-compose-compile"
+]
+exclude = ["out"]

@@ -1,0 +1,15 @@
+# Source: portal-co/shufl
+# Auto-generated - do not edit
+
+[package]
+name = "shufl"
+version = "0.1.0"
+edition = "2024"
+license = "MPL-2.0"
+description = "Shuffle values into a vector then drain them when pushed or at your accord"
+
+[dependencies]
+heapless = "0.8.0"
+
+[features]
+alloc=[]

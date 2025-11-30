@@ -1,0 +1,8 @@
+# Source: portal-co/awaiter-trait
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+embedded-io-async = { version = "0.6.1", optional = true }
+embedded-io = { version = "0.6.1", optional = true }
+

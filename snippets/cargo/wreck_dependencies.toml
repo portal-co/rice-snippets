@@ -1,0 +1,8 @@
+# Source: portal-co/wreck
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+embedded-io = "0.6.1"
+iced-x86 = { version = "1.21.0", default-features = false, optional = true, features = ["code_asm", "no_std"] }
+

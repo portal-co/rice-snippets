@@ -1,0 +1,9 @@
+# Source: portal-co/ribose
+# Auto-generated - do not edit
+
+[package]
+name = "ribose"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

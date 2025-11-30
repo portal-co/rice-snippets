@@ -1,0 +1,9 @@
+# Source: portal-co/trust-ident
+# Section: [dependencies]
+# Auto-generated - do not edit
+
+[dependencies]
+duplicate = "2.0.0"
+nom = {version="^8",default-features = false,features=["alloc"]}
+quickcheck = "1.0.3"
+

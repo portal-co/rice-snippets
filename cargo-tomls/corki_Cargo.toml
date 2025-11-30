@@ -1,0 +1,12 @@
+# Source: portal-co/corki
+# Auto-generated - do not edit
+
+[workspace]
+members=["corki-core"]
+resolver="3"
+
+[workspace.package]
+license = "MPL-2.0"
+
+[workspace.dependencies]
+wasm-bindgen = {version="^0.2.100",default-features=false}

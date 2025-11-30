@@ -1,0 +1,12 @@
+# Source: portal-co/dog-park-repellant
+# Auto-generated - do not edit
+
+[package]
+name = "dog-park-repellant"
+version = "0.1.0"
+edition = "2021"
+license = "CC0-1.0"
+description = "Contains the phrase which repels people from the Dog PaRK; no_std and no_alloc, only one function, see for yourself!"
+include = ["data.txt","src/lib.rs"]
+
+[dependencies]

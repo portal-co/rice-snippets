@@ -1,0 +1,7 @@
+# Source: portal-co/wars2
+# Section: [workspace.dependencies]
+# Auto-generated - do not edit
+
+[workspace.dependencies]
+waffle = { package = "portal-pc-waffle", version = "^0.5.5" }
+wasmparser = "0.240.0"

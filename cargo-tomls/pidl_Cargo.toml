@@ -1,0 +1,8 @@
+# Source: portal-co/pidl
+# Auto-generated - do not edit
+
+[workspace]
+members=[ "beem", "pidl-bud","pidl-core", "pidl-rust"]
+resolver="2"
+
+[workspace.dependencies]

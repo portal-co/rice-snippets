@@ -1,0 +1,8 @@
+# Source: portal-co/wax
+# Section: [workspace.dependencies]
+# Auto-generated - do not edit
+
+[workspace.dependencies]
+wasmparser = { version = "0.240.0", default-features = false }
+wasm-encoder = { version = "0.240.0", default-features = false,features = ["wasmparser"] }
+
