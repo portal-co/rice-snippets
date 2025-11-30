@@ -1,5 +1,1 @@
-# Source: portal-co/gorf
-# Section: [workspace.dependencies] - Group 10
-# Auto-generated - do not edit
-
-postcard = {version="1.0.8",features=["alloc","use-std"]}
+../cargo-hashed/8ec8c3752264b395.toml

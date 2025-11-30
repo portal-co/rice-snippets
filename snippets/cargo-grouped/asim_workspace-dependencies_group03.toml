@@ -1,5 +1,1 @@
-# Source: portal-co/asim
-# Section: [workspace.dependencies] - Group 3
-# Auto-generated - do not edit
-
-wax-core = {version = "0.1.0",git = "https://github.com/portal-co/wax.git",branch = "main"}
+../cargo-hashed/06905eeee9c8ab48.toml

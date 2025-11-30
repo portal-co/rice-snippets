@@ -1,7 +1,1 @@
-# Source: portal-co/llvm-codegen-utils
-# Section: [workspace.dependencies] - Group 2
-# Auto-generated - do not edit
-
-arena-traits="^0.2.0"
-cfg-traits="^0.3.0-alpha.0"
-ssa-traits="^0.3.0-alpha.0"
+../cargo-hashed/b928ddb6823890c2.toml

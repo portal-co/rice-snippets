@@ -1,5 +1,1 @@
-# Source: portal-co/asim
-# Section: [workspace.dependencies] - Group 4
-# Auto-generated - do not edit
-
-portal-pc-asm-common = {version = "0.1.1",git = "https://github.com/portal-co/asm-common.git"}
+../cargo-hashed/4bddb1bbdacbf8a7.toml

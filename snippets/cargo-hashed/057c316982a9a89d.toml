@@ -1,0 +1,10 @@
+# Hash: 057c316982a9a89db9701da1d012844cd3f6e7ce75b429a9ac12b941c8056110
+# Sources: more-pit/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+pit-core = { version = "^0.4.8", git = "https://github.com/portal-co/pit-core.git" }
+instability = "0.3.7"
+proc-macro2 = "1.0.95"
+quote = "1.0.40"
+syn = "2.0.101"
+portal-solutions-sdk = { version = "0.0.2", git = "https://github.com/portal-co/portal-solutions-sdk.git" }

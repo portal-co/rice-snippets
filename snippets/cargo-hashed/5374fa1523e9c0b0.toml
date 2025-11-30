@@ -1,0 +1,7 @@
+# Hash: 5374fa1523e9c0b0edd213f8d8b354866dfeb16ac98e0e91cda64529475566e6
+# Sources: embedded-llm/dependencies/group01
+# Auto-generated - do not edit
+
+embedded-io = "0.6.1"
+embedded-io-async = "0.6.1"
+futures-core = { version = "0.3.31", default-features = false }

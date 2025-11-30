@@ -1,0 +1,8 @@
+# Hash: ec0dce6a0a392ea4cdc9c2c680a8d9ce46a065954e25447bbbd13f9d01733ea3
+# Sources: jsaw/workspace-dependencies/group11
+# Auto-generated - do not edit
+
+bitvec = "^1.0.1"
+instability = "^0.3.7"
+linearize = "^0.1.4"
+linearize-derive = "^0.1.0"

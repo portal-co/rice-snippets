@@ -1,14 +1,1 @@
-# Source: portal-co/rebornpack
-# Section: [workspace.dependencies] - Group 19
-# Auto-generated - do not edit
-
-swc_core={version="0.99.3",features=[    "allocator_node",
-    "base",
-    "base_node",
-    "common",
-    "ecma_visit",
-    "bundler",
-    "ecma_loader",
-    "ecma_ast",
-    "trace_macro"]}
-swc_ecma_utils = "0.133.2"
+../cargo-hashed/7510046cc4f1a16a.toml

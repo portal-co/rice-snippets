@@ -1,0 +1,7 @@
+# Hash: 564305f2064c0a36932c4304ba897c1355d0627f9a8974eac24e64328131bb6f
+# Sources: portal-solutions-ai-interface/dependencies/group01
+# Auto-generated - do not edit
+
+anyhow.workspace = true
+boa_engine.workspace = true
+either = "1.15.0"

@@ -1,7 +1,1 @@
-# Source: portal-co/trust-ident
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-duplicate = "2.0.0"
-nom = {version="^8",default-features = false,features=["alloc"]}
-quickcheck = "1.0.3"
+../cargo-hashed/592bdbb4a22b78a9.toml

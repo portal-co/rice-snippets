@@ -1,6 +1,1 @@
-# Source: portal-co/jsaw
-# Section: [workspace.dependencies] - Group 7
-# Auto-generated - do not edit
-
-anyhow = "^1.0.87"
-bimap = "^0.6.3"
+../cargo-hashed/3016fe919f1f270f.toml

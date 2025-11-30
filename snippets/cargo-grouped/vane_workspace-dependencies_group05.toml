@@ -1,9 +1,1 @@
-# Source: portal-co/vane
-# Section: [workspace.dependencies] - Group 5
-# Auto-generated - do not edit
-
-portal-jsc-common = { git = "https://github.com/portal-co/jsaw-core.git", version = "^0.8.0-pre.7" }
-portal-jsc-swc-cfg = { git = "https://github.com/portal-co/jsaw-core.git", version = "^0.8.0-pre.7" }
-portal-jsc-swc-tac = { git = "https://github.com/portal-co/jsaw-core.git", version = "^0.8.0-pre.7" }
-portal-jsc-swc-ssa = { git = "https://github.com/portal-co/jsaw-core.git", version = "^0.8.0-pre.7" }
-portal-jsc-swc-util = { git = "https://github.com/portal-co/jsaw-core.git", version = "^0.8.0-pre.7" }
+../cargo-hashed/b49c13656e270a83.toml

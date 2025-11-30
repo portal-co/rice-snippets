@@ -1,6 +1,1 @@
-# Source: portal-co/soda
-# Section: [workspace.dependencies] - Group 8
-# Auto-generated - do not edit
-
-iroh-net = "0.12.0"
-quinn = "=0.10.2"
+../cargo-hashed/3284530464d7d7a9.toml

@@ -1,0 +1,5 @@
+# Hash: c21c23d30362d493b436e21c02e1b62ee0eeee0b046b2a757d41cd78a8874c88
+# Sources: fmt-fix/dependencies/group01, mplbeem/dependencies/group01
+# Auto-generated - do not edit
+
+walkdir = "2.5.0"

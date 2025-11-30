@@ -1,0 +1,5 @@
+# Hash: a48bdaf30db83ddc877c59e0b7beeabe5434ef3d49bb21ae9ba88e6d0ef55909
+# Sources: debuff/dependencies/group01
+# Auto-generated - do not edit
+
+sha3 = { version = "0.10.8", default-features = false }

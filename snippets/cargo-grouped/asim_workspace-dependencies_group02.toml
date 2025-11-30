@@ -1,5 +1,1 @@
-# Source: portal-co/asim
-# Section: [workspace.dependencies] - Group 2
-# Auto-generated - do not edit
-
-portal-solutions-asm-semantics = {version = "0.1.0",git = "https://github.com/portal-co/asm-arch.git"}
+../cargo-hashed/094c68d4c38723f4.toml

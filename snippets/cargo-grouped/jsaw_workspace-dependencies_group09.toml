@@ -1,8 +1,1 @@
-# Source: portal-co/jsaw
-# Section: [workspace.dependencies] - Group 9
-# Auto-generated - do not edit
-
-typenum = "^1.18.0"
-bitflags = "^2.8.0"
-relooper = "^0.1.0"
-cityhasher = "^0.1.0"
+../cargo-hashed/b1849940dba5f692.toml

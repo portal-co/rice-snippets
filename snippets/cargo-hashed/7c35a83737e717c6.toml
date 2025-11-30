@@ -1,0 +1,6 @@
+# Hash: 7c35a83737e717c6f055fed2b0f7c19d4925b54ab578a88280ee6a69468a1637
+# Sources: portal-solutions-extism-compat/dependencies/group01
+# Auto-generated - do not edit
+
+base64 = "0.22.1"
+extism-pdk = "1.4.1"

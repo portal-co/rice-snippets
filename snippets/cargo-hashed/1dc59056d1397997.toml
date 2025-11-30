@@ -1,0 +1,5 @@
+# Hash: 1dc59056d139799708eaafc6ee5ee30c15c5b2e40c3de7a63d23faadcb99f1e3
+# Sources: vane/workspace-dependencies/group02
+# Auto-generated - do not edit
+
+wax-core = { version = "0.1.0", git = "https://github.com/portal-co/wax.git", branch = "main" }

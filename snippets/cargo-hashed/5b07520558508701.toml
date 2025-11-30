@@ -1,0 +1,9 @@
+# Hash: 5b075205585087013562a062d303a22d91e8855e37cfaa2a5ec0e51469daa104
+# Sources: speet/workspace-dependencies/group04
+# Auto-generated - do not edit
+
+portal-pc-asm-common = {version = "0.1.1",git = "https://github.com/portal-co/asm-common.git"}
+portal-solutions-asm-x86-64 = {version = "0.1.0",git = "https://github.com/portal-co/asm-arch.git"}
+rv-asm = {version = "*",git = "https://github.com/portal-co/rv-utils.git"}
+rabbitizer = "1.14.3"
+powerpc = "0.4.1"

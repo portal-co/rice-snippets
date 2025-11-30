@@ -1,0 +1,13 @@
+# Hash: 1f5a9c3e4781868178f1005e2fe0b9264bea95341f0f4f177b4bbb6f47849717
+# Sources: wars-pit-plugin/dependencies/group02
+# Auto-generated - do not edit
+
+# portal-pc-waffle.workspace = true
+proc-macro2 = "1.0.85"
+quasiquote = "0.1.1"
+quote = "1.0.36"
+relooper = "0.1.0"
+sha3 = "0.10.8"
+syn = "2.0.66"
+# waffle-func-reloop = { version = "0.6.0", path = "../waffle-func-reloop" }
+# witx = {git="https://github.com/wasix-org/wasix-witx.git",branch="main"}

@@ -1,5 +1,1 @@
-# Source: portal-co/debuff
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-sha3 = { version = "0.10.8", default-features = false }
+../cargo-hashed/a48bdaf30db83ddc.toml

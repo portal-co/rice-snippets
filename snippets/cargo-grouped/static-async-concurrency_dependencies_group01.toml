@@ -1,8 +1,1 @@
-# Source: portal-co/static-async-concurrency
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-futures = { version = "0.3.31", default-features = false }
-generic-array = "1.2.0"
-pin-project-lite = "0.2.16"
-typenum = "1.18.0"
+../cargo-hashed/5aa59c9efbf2d833.toml

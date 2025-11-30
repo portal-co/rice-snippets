@@ -1,6 +1,1 @@
-# Source: portal-co/rebornpack
-# Section: [workspace.dependencies] - Group 13
-# Auto-generated - do not edit
-
-libp2p = "0.53.2"
-libp2p-stream = "0.1.0-alpha"
+../cargo-hashed/8e3b1326bfeb53b4.toml

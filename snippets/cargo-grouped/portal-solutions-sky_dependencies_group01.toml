@@ -1,5 +1,1 @@
-# Source: portal-co/portal-solutions-sky
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-hex = { version = "0.4.3", default-features = false }
+../cargo-hashed/79d35c4a3a41e49b.toml

@@ -1,0 +1,6 @@
+# Hash: d1e6b2e787863902f2952d62b7641b847ce876a6dc51e0fde5ef78e32c4690cf
+# Sources: sage/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+# Git
+waffle={git="https://github.com/portal-co/waffle-.git",branch="pr/merge-everything"}

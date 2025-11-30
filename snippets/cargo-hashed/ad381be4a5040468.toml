@@ -1,0 +1,5 @@
+# Hash: ad381be4a50404680679779fd27b626ec36a9d34782c77e29fdc58e5e03387d9
+# Sources: waco/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+px-llvm-codegen-utils-core={git="https://github.com/portal-co/llvm-codegen-utils.git",version="^0.1.5"}

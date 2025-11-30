@@ -1,8 +1,1 @@
-# Source: portal-co/crust-cage
-# Section: [workspace.dependencies] - Group 1
-# Auto-generated - do not edit
-
-prettyplease = "0.2.37"
-proc-macro2 = "1.0.103"
-quote = "1.0.41"
-syn = "2.0.108"
+../cargo-hashed/3bf66d65455cbc60.toml

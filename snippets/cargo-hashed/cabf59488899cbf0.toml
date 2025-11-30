@@ -1,0 +1,6 @@
+# Hash: cabf59488899cbf08f73182f9229b0388d8db3720ce1ae3434e181f5c16e4ee7
+# Sources: more_waffle/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+# waffle = {git="https://github.com/portal-co/waffle-.git",branch="pr/changes2"}
+portal-pc-waffle = {version="0.4.0"}

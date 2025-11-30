@@ -1,6 +1,1 @@
-# Source: portal-co/rift
-# Section: [dev-dependencies] - Group 1
-# Auto-generated - do not edit
-
-bitvec = "1.0.1"
-object = { version = "0.36.0", default-features = false, features = ["read", "elf"] }
+../cargo-hashed/0535914adceb4422.toml

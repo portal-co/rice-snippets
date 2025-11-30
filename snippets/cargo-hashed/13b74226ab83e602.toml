@@ -1,0 +1,6 @@
+# Hash: 13b74226ab83e60270a15c5dc58b98c4a7384ac4ab2e2523b7b9e66a3f6786ce
+# Sources: waco/workspace-dependencies/group02
+# Auto-generated - do not edit
+
+cranelift-frontend = "0.123.2"
+cranelift-codegen = "0.123.2"

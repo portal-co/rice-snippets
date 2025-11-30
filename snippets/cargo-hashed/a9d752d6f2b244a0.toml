@@ -1,0 +1,5 @@
+# Hash: a9d752d6f2b244a0df0bc4a38951db57c66f5684fd29f15e81dff4a990b1f7ab
+# Sources: rage/workspace-dependencies/group05
+# Auto-generated - do not edit
+
+rage-common = { version = "0.1.0", path = "crates/rage-common" }

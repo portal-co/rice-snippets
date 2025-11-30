@@ -1,15 +1,1 @@
-# Source: portal-co/wars-pit-plugin
-# Section: [dependencies] - Group 3
-# Auto-generated - do not edit
-
-# wars = { version = "0.6.0", path = "../wars" }
-anyhow = "1.0.93"
-portal-pc-waffle = "0.5.4"
-waffle-func-reloop = "0.7.0"
-wars = "0.7.0"
-pit-core = "0.4.2"
-pit-patch = "0.4.0"
-pit-rust-guest = "0.4.0"
- # pit-core.workspace = true
- # pit-patch.workspace = true
- # pit-rust-guest.workspace = true
+../cargo-hashed/8ebfff088cbeae37.toml

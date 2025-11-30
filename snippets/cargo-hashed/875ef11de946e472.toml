@@ -1,0 +1,6 @@
+# Hash: 875ef11de946e47207764db99b5f1cbb7dc15b81fb779558aa2f9751528368ba
+# Sources: wreck/dependencies/group01
+# Auto-generated - do not edit
+
+embedded-io = "0.6.1"
+iced-x86 = { version = "1.21.0", default-features = false, optional = true, features = ["code_asm", "no_std"] }

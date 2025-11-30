@@ -1,8 +1,1 @@
-# Source: portal-co/soda
-# Section: [workspace.dependencies] - Group 6
-# Auto-generated - do not edit
-
-syn-serde = { version = "0.3", features = ["json"] }
-syn = { version = "2", features = ["full"] }
-proc-macro2 = "1.0.78"
-quote = "1.0.35"
+../cargo-hashed/afcb1dee485a0e6c.toml

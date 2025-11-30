@@ -1,0 +1,9 @@
+# Hash: af56fa298bf6cd1b7b89efa8a744358f54f93dbac4d9c334e0c576ef7de78863
+# Sources: rift/dependencies/group01
+# Auto-generated - do not edit
+
+itertools = { version = "0.14.0", default-features = false, features = ["use_alloc"] }
+paste = "1.0.15"
+portal-pc-asm-common = { version = "0.1.0", features = ["alloc"] }
+portal-pc-waffle = {version="^0.5.5",git="https://github.com/portal-co/waffle-.git",branch="portal"}
+rv-asm = {version="^0.2.1",git = "https://github.com/portal-co/rv-utils.git",branch = "main"}

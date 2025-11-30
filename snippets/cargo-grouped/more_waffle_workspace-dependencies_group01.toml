@@ -1,6 +1,1 @@
-# Source: portal-co/more_waffle
-# Section: [workspace.dependencies] - Group 1
-# Auto-generated - do not edit
-
-# waffle = {git="https://github.com/portal-co/waffle-.git",branch="pr/changes2"}
-portal-pc-waffle = {version="0.4.0"}
+../cargo-hashed/cabf59488899cbf0.toml

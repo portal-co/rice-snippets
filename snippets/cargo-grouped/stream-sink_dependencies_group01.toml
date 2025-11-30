@@ -1,6 +1,1 @@
-# Source: portal-co/stream-sink
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-futures-core = { version = "0.3.30", default-features = false }
-futures-sink = { version = "0.3.30", default-features = false }
+../cargo-hashed/66f74b9eec949a96.toml

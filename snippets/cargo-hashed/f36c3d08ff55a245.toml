@@ -1,0 +1,6 @@
+# Hash: f36c3d08ff55a245c81588d30448f61d64eecb84378c1c892826af8e279b9851
+# Sources: asim/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+wasmparser = { version = "0.239.0", default-features = false }
+wasm-encoder = { version = "0.239.0", default-features = false,features = ["wasmparser"] }

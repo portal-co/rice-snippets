@@ -1,8 +1,1 @@
-# Source: portal-co/rebornpack
-# Section: [workspace.dependencies] - Group 1
-# Auto-generated - do not edit
-
-webc = { version = "6.0.0-rc1", default-features = false, features = ["package"] }
-cxx = "1.0"
-noak="0.6.0"
-zip = "2.1.1"
+../cargo-hashed/4c71e2b66d49325a.toml

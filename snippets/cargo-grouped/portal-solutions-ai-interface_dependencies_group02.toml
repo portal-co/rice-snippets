@@ -1,8 +1,1 @@
-# Source: portal-co/portal-solutions-ai-interface
-# Section: [dependencies] - Group 2
-# Auto-generated - do not edit
-
-serde.workspace = true
-serde_json.workspace = true
-wasm-bindgen = {workspace = true,optional = true}
-wasm-bindgen-futures = {workspace = true,optional = true}
+../cargo-hashed/fc56646029a6409b.toml

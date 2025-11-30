@@ -1,0 +1,9 @@
+# Hash: 1ba39c4ccb942d1d1cc85f0f4c5138e4ea10067968ae4a802057e3194b941004
+# Sources: wasm-blitz/workspace-dependencies/group03
+# Auto-generated - do not edit
+
+portal-solutions-blitz-common = { version = "0.1.0", path = "crates/blitz-common", default-features = false }
+portal-solutions-blitz-i4 = { version = "0.1.0", path = "crates/blitz-i4" }
+portal-pc-asm-common = {version = "0.1.1",git = "https://github.com/portal-co/asm-common.git"}
+portal-solutions-asm-x86-64 = {version = "0.1.0",git = "https://github.com/portal-co/asm-arch.git"}
+typeid = "1.0.3"

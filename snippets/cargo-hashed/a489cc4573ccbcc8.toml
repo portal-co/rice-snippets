@@ -1,0 +1,8 @@
+# Hash: a489cc4573ccbcc870e2c6b94ebb82b82b969fbc80ec96ae700d9114b3b47c0c
+# Sources: jsaw-core/workspace-dependencies/group04, jsaw/workspace-dependencies/group08
+# Auto-generated - do not edit
+
+proc-macro2 = "^1.0.88"
+quasiquote = "^0.1.1"
+quote = "^1.0.37"
+syn = "^2.0.82"

@@ -1,0 +1,9 @@
+# Hash: f12fec5c7714687a2ccfc059fd008ed7e32f0d707e2261fb6dd08faa79dfe2ff
+# Sources: gorf/workspace-dependencies/group16, rebornpack/workspace-dependencies/group17, soda/workspace-dependencies/group10
+# Auto-generated - do not edit
+
+arti-client = {version="0.14.1",features=["onion-service-service","onion-service-client"]}
+tor-hsservice = "=0.8.0"
+tor-rtcompat = "=0.10.0"
+tor-cell = "0.16.1"
+tor-hscrypto = "0.6.1"

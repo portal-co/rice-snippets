@@ -1,0 +1,5 @@
+# Hash: 13e733b68feb955c21ed38b45a700186e1777d7083f3ef887a89c764e58bd5c9
+# Sources: jsaw/workspace-dependencies/group06
+# Auto-generated - do not edit
+
+portal-solutions-swibb={version="^0.5.0",git="https://github.com/portal-co/swibb.git"}

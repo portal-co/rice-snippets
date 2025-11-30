@@ -1,0 +1,5 @@
+# Hash: 094c68d4c38723f4afe0fdfd6babc4b44624336d45a3eee5fb6377d0b8ca1347
+# Sources: asim/workspace-dependencies/group02
+# Auto-generated - do not edit
+
+portal-solutions-asm-semantics = {version = "0.1.0",git = "https://github.com/portal-co/asm-arch.git"}

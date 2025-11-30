@@ -1,6 +1,1 @@
-# Source: portal-co/vane
-# Section: [workspace.dependencies] - Group 10
-# Auto-generated - do not edit
-
-wasm-bindgen = "0.2.100"
-spin = "0.10.0"
+../cargo-hashed/1c864ef01914c89a.toml

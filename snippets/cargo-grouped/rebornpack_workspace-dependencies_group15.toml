@@ -1,5 +1,1 @@
-# Source: portal-co/rebornpack
-# Section: [workspace.dependencies] - Group 15
-# Auto-generated - do not edit
-
-ic-wasi-polyfill={git="https://github.com/wasm-forge/ic-wasi-polyfill.git"}
+../cargo-hashed/a708019cbd40b7d9.toml

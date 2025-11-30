@@ -1,0 +1,18 @@
+# Hash: bf19b21048346cf301182a96da5d0b673a9c602647ced8698d97907f3eeae573
+# Sources: vane/workspace-dependencies/group07, weevy/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+swc_atoms = "^6.0.0"
+swc_common = "^13.0.0"
+swc_ecma_ast = "^13.0.0"
+swc_ecma_compat_es2015 = "^19.0.0"
+swc_ecma_minifier = "^23.0.0"
+swc_ecma_transforms_base = "^18.0.0"
+swc_ecma_transforms_optimization = "^19.0.0"
+swc_ecma_utils = "^18.0.0"
+swc_ecma_visit = "^13.0.0"
+swc_bundler = "^22.0.0"
+swc_ecma_loader = "^13.0.0"
+swc_ecma_parser = "^17.0.0"
+swc_ecma_codegen = "^15"
+swc_ecma_quote = "^17"

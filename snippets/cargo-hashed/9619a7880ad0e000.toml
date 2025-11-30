@@ -1,0 +1,5 @@
+# Hash: 9619a7880ad0e0003b243798b256180cbe2199dad5b4b2e9cd2dae29dfdf172f
+# Sources: rebornpack/workspace-dependencies/group07
+# Auto-generated - do not edit
+
+serde = { version = "1.0", features = ["derive"] }

@@ -1,6 +1,1 @@
-# Source: portal-co/wars-pit-plugin
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-bitflags = "2.5.0"
-hex = "0.4.3"
+../cargo-hashed/1587fe7d290852e7.toml

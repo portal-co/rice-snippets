@@ -10,6 +10,8 @@ Simply copy the relevant dependencies into your Cargo.toml file.
 
 For smaller, logically grouped snippets, see the `cargo-grouped/` directory.
 
+For deduplicated hash-based snippets, see the `cargo-hashed/` directory.
+
 ## Repositories with Dependencies
 
 - [amgo](https://github.com/portal-co/amgo)

@@ -1,0 +1,8 @@
+# Hash: a254b82993f4426d6433602d3783d502a49208f0089112fdc7f6398d69fe4e5b
+# Sources: pit/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+portal-pc-waffle = "^0.5"
+# waffle-ast = "0.4"
+pit-core = { version = "^0.4.2", git = "https://github.com/portal-co/pit-core.git" }
+instability = "0.3.7"

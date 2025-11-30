@@ -4,58 +4,140 @@ Download Cargo.toml files from portal-co organization repositories
 and extract dependency sections for templating.
 
 Dependencies are split by logical groupings (blank lines) into separate files.
+Uses SHA256 hashing for deduplication with symlinks for the naming scheme.
 """
 
 import os
 import re
 import json
+import hashlib
 import urllib.request
 import urllib.error
 from pathlib import Path
-from typing import Optional, List, Tuple
-
-# List of Rust repositories in portal-co organization (manually compiled from GitHub search)
-RUST_REPOS = [
-    "rift", "scrave", "corwake", "hermitking", "valser", "hash-based-signature",
-    "embedded-llm", "axum-wist", "portal-core", "no-error", "wreck", "iob",
-    "libtut", "boople", "koffle", "shufl", "crust-cage", "bf-beef",
-    "portal-solutions-ai-interface", "mx6502", "wars2", "mplbeem",
-    "portal-solutions-extism-compat", "wax", "dog-park-repellant", "weev",
-    "stern-bijection", "elegant-pairing", "proxy-signs", "amgo", "vane",
-    "corki", "gorf", "rice", "nanbox", "music-blender", "awaiter-trait",
-    "panic-ub", "llvm-codegen-utils", "asm-arch", "talc", "pit-core",
-    "more_waffle", "trust-ident", "ribose", "static-async-concurrency",
-    "bysyncify", "otp-stream", "portal-solutions-sdk", "jsaw", "simpl",
-    "embedded-chacha", "simple-encryption", "xtp-schema", "rv-emit", "sage",
-    "debuff", "blang", "andes", "portal-solutions-sky", "more-pit",
-    "asm-common", "rage", "rewd", "embedded-packet-io", "pupi", "fmt-fix",
-    "i4delt", "tipsy", "morphic", "wasmsign3", "rv-utils", "swibb", "soda",
-    "embedded-io-convert", "codegen-utils", "codegen-utils-common", "pair",
-    "asim", "wasm-blitz", "jsaw-core", "pidl", "trampoline-rs", "sha3-literal",
-    "waco", "pit", "sh-secgen", "minicoro-awaiters", "speet", "yonet",
-    "rebornpack", "stream-sink", "arena-traits", "metapatch", "wars-pit-plugin",
-    "weevy"
-]
-
-# Default branches for repos (most are 'main', some are 'master')
-MASTER_REPOS = [
-    "valser", "weev", "elegant-pairing", "llvm-codegen-utils", "talc",
-    "more_waffle", "otp-stream", "jsaw", "simple-encryption", "sage", "soda",
-    "embedded-io-convert", "codegen-utils", "pair", "pidl", "trampoline-rs",
-    "pit", "rebornpack", "stream-sink"
-]
+from typing import Optional, List, Tuple, Dict
 
 
-def get_default_branch(repo: str) -> str:
-    """Get the default branch for a repository."""
-    return "master" if repo in MASTER_REPOS else "main"
+def discover_rust_repos(owner: str, per_page: int = 100) -> List[Dict]:
+    """
+    Automatically discover Rust repositories in the organization using GitHub API.
+    Returns a list of repository info dicts with name and default_branch.
+    Falls back to a hardcoded list if the API fails.
+    """
+    repos = []
+    page = 1
+    
+    print(f"Discovering Rust repositories in {owner}...")
+    
+    while True:
+        url = f"https://api.github.com/search/repositories?q=org:{owner}+language:Rust&per_page={per_page}&page={page}"
+        try:
+            req = urllib.request.Request(url)
+            req.add_header('Accept', 'application/vnd.github.v3+json')
+            req.add_header('User-Agent', 'rice-snippets-downloader')
+            
+            with urllib.request.urlopen(req, timeout=30) as response:
+                data = json.loads(response.read().decode('utf-8'))
+                items = data.get('items', [])
+                
+                if not items:
+                    break
+                
+                for item in items:
+                    repos.append({
+                        'name': item['name'],
+                        'default_branch': item.get('default_branch', 'main'),
+                        'full_name': item['full_name']
+                    })
+                
+                # Check if there are more pages
+                if len(items) < per_page:
+                    break
+                    
+                page += 1
+                
+        except urllib.error.HTTPError as e:
+            print(f"  [WARN] GitHub API error: {e.code}, using fallback list")
+            return get_fallback_repos()
+        except Exception as e:
+            print(f"  [WARN] Failed to discover repos: {e}, using fallback list")
+            return get_fallback_repos()
+    
+    if not repos:
+        print("  [WARN] No repos found via API, using fallback list")
+        return get_fallback_repos()
+    
+    print(f"  Found {len(repos)} Rust repositories")
+    return repos
+
+
+def get_fallback_repos() -> List[Dict]:
+    """Return a fallback list of known Rust repositories."""
+    # Hardcoded list of known Rust repos with their default branches
+    known_repos = [
+        ("rift", "main"), ("scrave", "main"), ("corwake", "main"), ("hermitking", "main"),
+        ("valser", "master"), ("hash-based-signature", "main"), ("embedded-llm", "main"),
+        ("axum-wist", "main"), ("portal-core", "main"), ("no-error", "main"),
+        ("wreck", "main"), ("iob", "main"), ("libtut", "main"), ("boople", "main"),
+        ("koffle", "main"), ("shufl", "main"), ("crust-cage", "main"), ("bf-beef", "main"),
+        ("portal-solutions-ai-interface", "main"), ("mx6502", "main"), ("wars2", "main"),
+        ("mplbeem", "main"), ("portal-solutions-extism-compat", "main"), ("wax", "main"),
+        ("dog-park-repellant", "main"), ("weev", "master"), ("stern-bijection", "main"),
+        ("elegant-pairing", "master"), ("proxy-signs", "main"), ("amgo", "main"),
+        ("vane", "main"), ("corki", "main"), ("gorf", "main"), ("rice", "main"),
+        ("nanbox", "main"), ("music-blender", "main"), ("awaiter-trait", "main"),
+        ("panic-ub", "main"), ("llvm-codegen-utils", "master"), ("asm-arch", "main"),
+        ("talc", "master"), ("pit-core", "main"), ("more_waffle", "master"),
+        ("trust-ident", "main"), ("ribose", "main"), ("static-async-concurrency", "main"),
+        ("bysyncify", "main"), ("otp-stream", "master"), ("portal-solutions-sdk", "main"),
+        ("jsaw", "master"), ("simpl", "main"), ("embedded-chacha", "main"),
+        ("simple-encryption", "master"), ("xtp-schema", "main"), ("rv-emit", "main"),
+        ("sage", "master"), ("debuff", "main"), ("blang", "main"), ("andes", "main"),
+        ("portal-solutions-sky", "main"), ("more-pit", "main"), ("asm-common", "main"),
+        ("rage", "main"), ("rewd", "main"), ("embedded-packet-io", "main"),
+        ("pupi", "main"), ("fmt-fix", "main"), ("i4delt", "main"), ("tipsy", "main"),
+        ("morphic", "main"), ("wasmsign3", "main"), ("rv-utils", "main"),
+        ("swibb", "main"), ("soda", "master"), ("embedded-io-convert", "master"),
+        ("codegen-utils", "master"), ("codegen-utils-common", "main"), ("pair", "master"),
+        ("asim", "main"), ("wasm-blitz", "main"), ("jsaw-core", "main"),
+        ("pidl", "master"), ("trampoline-rs", "master"), ("sha3-literal", "main"),
+        ("waco", "main"), ("pit", "master"), ("sh-secgen", "main"),
+        ("minicoro-awaiters", "main"), ("speet", "main"), ("yonet", "main"),
+        ("rebornpack", "master"), ("stream-sink", "master"), ("arena-traits", "main"),
+        ("metapatch", "main"), ("wars-pit-plugin", "main"), ("weevy", "main")
+    ]
+    
+    repos = [
+        {'name': name, 'default_branch': branch, 'full_name': f'portal-co/{name}'}
+        for name, branch in known_repos
+    ]
+    print(f"  Using fallback list with {len(repos)} repositories")
+    return repos
+
+
+def compute_content_hash(content: str) -> str:
+    """Compute SHA256 hash of the content (excluding metadata comments)."""
+    # Strip leading comments that contain metadata
+    lines = content.split('\n')
+    content_lines = []
+    for line in lines:
+        stripped = line.strip()
+        # Skip metadata comments at the start
+        if stripped.startswith('# Source:') or stripped.startswith('# Section:') or stripped.startswith('# Auto-generated'):
+            continue
+        content_lines.append(line)
+    
+    # Remove leading/trailing whitespace from the combined content
+    clean_content = '\n'.join(content_lines).strip()
+    return hashlib.sha256(clean_content.encode('utf-8')).hexdigest()
 
 
 def download_cargo_toml(owner: str, repo: str, branch: str) -> Optional[str]:
     """Download Cargo.toml from a GitHub repository."""
     url = f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/Cargo.toml"
     try:
-        with urllib.request.urlopen(url, timeout=10) as response:
+        req = urllib.request.Request(url)
+        req.add_header('User-Agent', 'rice-snippets-downloader')
+        with urllib.request.urlopen(req, timeout=10) as response:
             return response.read().decode('utf-8')
     except urllib.error.HTTPError as e:
         if e.code == 404:
@@ -63,7 +145,9 @@ def download_cargo_toml(owner: str, repo: str, branch: str) -> Optional[str]:
             alt_branch = "master" if branch == "main" else "main"
             alt_url = f"https://raw.githubusercontent.com/{owner}/{repo}/{alt_branch}/Cargo.toml"
             try:
-                with urllib.request.urlopen(alt_url, timeout=10) as response:
+                req = urllib.request.Request(alt_url)
+                req.add_header('User-Agent', 'rice-snippets-downloader')
+                with urllib.request.urlopen(req, timeout=10) as response:
                     return response.read().decode('utf-8')
             except urllib.error.HTTPError:
                 print(f"  [SKIP] No Cargo.toml found in {repo}")
@@ -210,22 +294,93 @@ def save_snippet(output_dir: Path, repo: str, section_name: str, content: str) -
     return filepath
 
 
-def save_grouped_snippet(output_dir: Path, repo: str, section_name: str, 
-                         group_index: int, content: str) -> Path:
-    """Save a grouped dependency snippet to a file."""
-    # Create a safe filename with group index
+def save_hashed_snippet(hash_dir: Path, content: str, sources: List[str]) -> Tuple[Path, str]:
+    """
+    Save a dependency snippet to a hash-based file.
+    Returns the filepath and the hash.
+    """
+    content_hash = compute_content_hash(content)
+    # Use first 16 chars of hash for filename (64 bits, still unique enough)
+    short_hash = content_hash[:16]
+    filename = f"{short_hash}.toml"
+    filepath = hash_dir / filename
+    
+    # Only write if file doesn't exist (deduplication)
+    if not filepath.exists():
+        with open(filepath, 'w') as f:
+            f.write(f"# Hash: {content_hash}\n")
+            f.write(f"# Sources: {', '.join(sources)}\n")
+            f.write(f"# Auto-generated - do not edit\n\n")
+            f.write(content)
+            f.write('\n')
+    else:
+        # Update sources in existing file
+        with open(filepath, 'r') as f:
+            existing_content = f.read()
+        
+        # Parse existing sources
+        existing_sources = []
+        for line in existing_content.split('\n'):
+            if line.startswith('# Sources:'):
+                existing_sources = [s.strip() for s in line[10:].split(',')]
+                break
+        
+        # Add new sources
+        all_sources = list(set(existing_sources + sources))
+        
+        # Rewrite with updated sources
+        lines = existing_content.split('\n')
+        for i, line in enumerate(lines):
+            if line.startswith('# Sources:'):
+                lines[i] = f"# Sources: {', '.join(sorted(all_sources))}"
+                break
+        
+        with open(filepath, 'w') as f:
+            f.write('\n'.join(lines))
+    
+    return filepath, short_hash
+
+
+def create_symlink(symlink_path: Path, target_path: Path):
+    """Create a symlink, handling existing files."""
+    # Remove existing file/symlink if it exists
+    if symlink_path.exists() or symlink_path.is_symlink():
+        symlink_path.unlink()
+    
+    # Create relative symlink
+    rel_target = os.path.relpath(target_path, symlink_path.parent)
+    symlink_path.symlink_to(rel_target)
+
+
+def save_grouped_snippet(grouped_dir: Path, hash_dir: Path, repo: str, section_name: str, 
+                         group_index: int, content: str, hash_registry: Dict[str, List[str]]) -> Tuple[Path, str]:
+    """
+    Save a grouped dependency snippet using hash-based deduplication.
+    Creates a symlink from the named file to the hash-based file.
+    Returns the symlink path and hash.
+    """
+    # Compute hash of the content
+    content_hash = compute_content_hash(content)
+    short_hash = content_hash[:16]
+    
+    # Source identifier for this snippet
     safe_section = section_name.replace('.', '-').replace('/', '-')
-    filename = f"{repo}_{safe_section}_group{group_index:02d}.toml"
-    filepath = output_dir / filename
+    source_id = f"{repo}/{safe_section}/group{group_index:02d}"
     
-    with open(filepath, 'w') as f:
-        f.write(f"# Source: portal-co/{repo}\n")
-        f.write(f"# Section: [{section_name}] - Group {group_index}\n")
-        f.write(f"# Auto-generated - do not edit\n\n")
-        f.write(content)
-        f.write('\n')
+    # Track sources for this hash
+    if short_hash not in hash_registry:
+        hash_registry[short_hash] = []
+    hash_registry[short_hash].append(source_id)
     
-    return filepath
+    # Save to hash-based file
+    hash_file, _ = save_hashed_snippet(hash_dir, content, [source_id])
+    
+    # Create symlink with the friendly name
+    symlink_name = f"{repo}_{safe_section}_group{group_index:02d}.toml"
+    symlink_path = grouped_dir / symlink_name
+    create_symlink(symlink_path, hash_file)
+    
+    return symlink_path, short_hash
 
 
 def main():
@@ -234,30 +389,46 @@ def main():
     repo_root = script_dir.parent
     output_dir = repo_root / "snippets" / "cargo"
     grouped_dir = repo_root / "snippets" / "cargo-grouped"
+    hash_dir = repo_root / "snippets" / "cargo-hashed"
     cargo_tomls_dir = repo_root / "cargo-tomls"
     
     # Create output directories
     output_dir.mkdir(parents=True, exist_ok=True)
     grouped_dir.mkdir(parents=True, exist_ok=True)
+    hash_dir.mkdir(parents=True, exist_ok=True)
     cargo_tomls_dir.mkdir(parents=True, exist_ok=True)
     
     owner = "portal-co"
+    
+    # Automatically discover Rust repositories
+    repos = discover_rust_repos(owner)
+    
+    if not repos:
+        print("No repositories found. Exiting.")
+        return
+    
     stats = {
-        'total_repos': len(RUST_REPOS),
+        'total_repos': len(repos),
         'downloaded': 0,
         'failed': 0,
         'sections_extracted': 0,
         'groups_extracted': 0,
+        'unique_hashes': 0,
         'repos_with_deps': []
     }
     
-    print(f"Downloading Cargo.toml files from {len(RUST_REPOS)} repositories...")
+    # Registry to track hash -> sources mapping
+    hash_registry: Dict[str, List[str]] = {}
+    
+    print(f"\nDownloading Cargo.toml files from {len(repos)} repositories...")
     print(f"Output directory: {output_dir}")
     print(f"Grouped directory: {grouped_dir}")
+    print(f"Hash directory: {hash_dir}")
     print("-" * 60)
     
-    for repo in RUST_REPOS:
-        branch = get_default_branch(repo)
+    for repo_info in repos:
+        repo = repo_info['name']
+        branch = repo_info['default_branch']
         print(f"Processing {repo}...")
         
         content = download_cargo_toml(owner, repo, branch)
@@ -285,14 +456,18 @@ def main():
                 stats['sections_extracted'] += 1
                 print(f"  -> Saved {section_name} to {filepath.name}")
                 
-                # Split by blank lines and save grouped snippets
+                # Split by blank lines and save grouped snippets with hash-based dedup
                 groups = split_by_blank_lines(section_content)
                 for i, group in enumerate(groups, 1):
-                    group_path = save_grouped_snippet(
-                        grouped_dir, repo, section_name, i, group
+                    symlink_path, content_hash = save_grouped_snippet(
+                        grouped_dir, hash_dir, repo, section_name, i, group, hash_registry
                     )
                     stats['groups_extracted'] += 1
-                    print(f"     -> Group {i}: {group_path.name}")
+                    print(f"     -> Group {i}: {symlink_path.name} -> {content_hash}.toml")
+    
+    # Count unique hashes
+    stats['unique_hashes'] = len(hash_registry)
+    duplicates = sum(1 for sources in hash_registry.values() if len(sources) > 1)
     
     print("-" * 60)
     print(f"\nSummary:")
@@ -301,6 +476,8 @@ def main():
     print(f"  Failed: {stats['failed']}")
     print(f"  Dependency sections extracted: {stats['sections_extracted']}")
     print(f"  Grouped snippets created: {stats['groups_extracted']}")
+    print(f"  Unique content hashes: {stats['unique_hashes']}")
+    print(f"  Duplicated snippets: {duplicates}")
     print(f"  Repos with dependencies: {len(stats['repos_with_deps'])}")
     
     # Save summary for main snippets
@@ -313,6 +490,7 @@ def main():
         f.write("These snippets can be used as templates for new Rust projects.\n")
         f.write("Simply copy the relevant dependencies into your Cargo.toml file.\n\n")
         f.write("For smaller, logically grouped snippets, see the `cargo-grouped/` directory.\n\n")
+        f.write("For deduplicated hash-based snippets, see the `cargo-hashed/` directory.\n\n")
         f.write("## Repositories with Dependencies\n\n")
         for repo in sorted(stats['repos_with_deps']):
             f.write(f"- [{repo}](https://github.com/portal-co/{repo})\n")
@@ -323,21 +501,50 @@ def main():
     grouped_summary_path = grouped_dir / "README.md"
     with open(grouped_summary_path, 'w') as f:
         f.write("# Cargo Dependency Snippets (Grouped)\n\n")
-        f.write("This directory contains dependency sections split by logical groupings\n")
-        f.write("(separated by blank lines in the original Cargo.toml files).\n\n")
+        f.write("This directory contains symlinks to deduplicated dependency snippets.\n")
+        f.write("Each symlink points to a hash-based file in `cargo-hashed/`.\n\n")
         f.write("## Naming Convention\n\n")
-        f.write("Files are named: `{repo}_{section}_group{NN}.toml`\n\n")
+        f.write("Symlinks are named: `{repo}_{section}_group{NN}.toml`\n\n")
         f.write("Where:\n")
         f.write("- `{repo}` is the repository name\n")
         f.write("- `{section}` is the dependency section (e.g., `dependencies`, `workspace-dependencies`)\n")
         f.write("- `{NN}` is the group number within that section\n\n")
         f.write("## Usage\n\n")
-        f.write("These smaller snippets allow you to copy just the dependencies you need\n")
-        f.write("without including unrelated packages.\n\n")
-        f.write(f"Total grouped snippets: {stats['groups_extracted']}\n\n")
+        f.write("These symlinks allow you to reference snippets by their source location\n")
+        f.write("while the actual content is deduplicated in `cargo-hashed/`.\n\n")
+        f.write(f"Total grouped snippets: {stats['groups_extracted']}\n")
+        f.write(f"Unique content files: {stats['unique_hashes']}\n\n")
         f.write(f"\n*Generated automatically by download_cargo_deps.py*\n")
     
-    print(f"\nDone! Snippets saved to {output_dir} and {grouped_dir}")
+    # Save summary for hash-based snippets
+    hash_summary_path = hash_dir / "README.md"
+    with open(hash_summary_path, 'w') as f:
+        f.write("# Cargo Dependency Snippets (Hash-Based)\n\n")
+        f.write("This directory contains deduplicated dependency snippets identified by SHA256 hash.\n\n")
+        f.write("## Naming Convention\n\n")
+        f.write("Files are named: `{hash}.toml` where `{hash}` is the first 16 characters of the SHA256 hash.\n\n")
+        f.write("## Deduplication\n\n")
+        f.write("Multiple repositories may share the same dependency groups.\n")
+        f.write("Each file contains a `# Sources:` comment listing all sources that share this content.\n\n")
+        f.write("## Usage\n\n")
+        f.write("Reference these files directly by hash for stable, content-addressable snippets.\n")
+        f.write("Or use the symlinks in `cargo-grouped/` for human-readable names.\n\n")
+        f.write(f"Total unique snippets: {stats['unique_hashes']}\n\n")
+        
+        # List duplicated snippets
+        if duplicates > 0:
+            f.write("## Shared Snippets\n\n")
+            f.write("The following snippets are shared by multiple sources:\n\n")
+            for content_hash, sources in sorted(hash_registry.items()):
+                if len(sources) > 1:
+                    f.write(f"### `{content_hash}.toml`\n")
+                    for source in sorted(sources):
+                        f.write(f"- {source}\n")
+                    f.write("\n")
+        
+        f.write(f"\n*Generated automatically by download_cargo_deps.py*\n")
+    
+    print(f"\nDone! Snippets saved to {output_dir}, {grouped_dir}, and {hash_dir}")
 
 
 if __name__ == "__main__":

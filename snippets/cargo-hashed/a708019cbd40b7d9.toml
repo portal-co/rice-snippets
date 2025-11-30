@@ -1,0 +1,5 @@
+# Hash: a708019cbd40b7d980f1ef7de126eded1634ec75a24dc72728114ee735f564ca
+# Sources: rebornpack/workspace-dependencies/group15
+# Auto-generated - do not edit
+
+ic-wasi-polyfill={git="https://github.com/wasm-forge/ic-wasi-polyfill.git"}

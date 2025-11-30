@@ -1,0 +1,10 @@
+# Hash: 1acf6cdef4eb98e19ee81d37516375e8e2471665a9cebf6dee25151ee7f647ee
+# Sources: jsaw/workspace-dependencies/group03
+# Auto-generated - do not edit
+
+id-arena = "^2.2.1"
+arena-traits = {version="^0.2.3",features=["id-arena"]}
+ssa-traits = {version="^0.2.3",git="https://github.com/portal-co/codegen-utils.git",branch="master"}
+cfg-traits = {version="^0.2.3",git="https://github.com/portal-co/codegen-utils.git",branch="master"}
+ssa-impls =  {version="^0.2.3",git="https://github.com/portal-co/codegen-utils.git",branch="master"}
+ssa-reloop = {version="^0.2.3",git="https://github.com/portal-co/codegen-utils.git",branch="master"}

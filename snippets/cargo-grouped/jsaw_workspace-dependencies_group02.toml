@@ -1,5 +1,1 @@
-# Source: portal-co/jsaw
-# Section: [workspace.dependencies] - Group 2
-# Auto-generated - do not edit
-
-portal-pc-waffle = {version="^0.5.5"}
+../cargo-hashed/607feba683d70680.toml

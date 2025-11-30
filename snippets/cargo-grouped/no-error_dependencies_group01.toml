@@ -1,6 +1,1 @@
-# Source: portal-co/no-error
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-embedded-hal = { version = "1.0.0", optional = true }
-embedded-io = { version = "0.6.1", optional = true }
+../cargo-hashed/d7259cc4315d4597.toml

@@ -1,0 +1,6 @@
+# Hash: 3016fe919f1f270fdd8c8437f9d37e902f2e6d395b38ae6a426ab86e2a3af7b0
+# Sources: jsaw/workspace-dependencies/group07
+# Auto-generated - do not edit
+
+anyhow = "^1.0.87"
+bimap = "^0.6.3"

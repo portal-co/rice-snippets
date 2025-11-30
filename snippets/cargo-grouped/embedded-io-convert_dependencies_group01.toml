@@ -1,5 +1,1 @@
-# Source: portal-co/embedded-io-convert
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-either = { version = "^1.13.0", default-features = false }
+../cargo-hashed/912abe267916a9a2.toml

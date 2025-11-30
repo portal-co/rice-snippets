@@ -1,0 +1,6 @@
+# Hash: 4cfadc3dc2eabb0c1dbed5354be4f8a3459f9aae5c2e5cd1afdde39535ad1d14
+# Sources: rebornpack/workspace-dependencies/group02
+# Auto-generated - do not edit
+
+# waffle = {git="https://github.com/portal-co/waffle-.git",branch="pr/changes2"}
+portal-pc-waffle = {git="https://github.com/portal-co/waffle-.git",branch="pr/changes2"}

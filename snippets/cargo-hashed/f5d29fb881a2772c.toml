@@ -1,0 +1,6 @@
+# Hash: f5d29fb881a2772c8b3445230d75cd332fd42fc96eca267ed5b0364a14a58715
+# Sources: talc/workspace-dependencies/group03
+# Auto-generated - do not edit
+
+anyhow = "1.0.95"
+goblin = "0.9.2"

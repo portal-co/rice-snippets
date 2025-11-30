@@ -1,12 +1,1 @@
-# Source: portal-co/jsaw-core
-# Section: [workspace.dependencies] - Group 6
-# Auto-generated - do not edit
-
-portal-pc-waffle = "^0.5.4"
-px-llvm-codegen-utils-core = "^0.1.4"
-px-llvm-codegen-utils-info = "^0.1.4"
-portal-pc-asm-common = "^0.1.0"
-bitvec = "^1.0.1"
-instability = "^0.3.7"
-linearize = "^0.1.4"
-linearize-derive = "^0.1.0"
+../cargo-hashed/9f5e8946d3c0c9b7.toml

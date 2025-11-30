@@ -1,0 +1,8 @@
+# Hash: 3bf66d65455cbc60f544522c494f1f608140d0f9b5bb9b164493a0f945de55ee
+# Sources: crust-cage/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+prettyplease = "0.2.37"
+proc-macro2 = "1.0.103"
+quote = "1.0.41"
+syn = "2.0.108"

@@ -1,0 +1,6 @@
+# Hash: 66f74b9eec949a96c26c2dab7735cd888a4516dae012d27e051e255cb68cd78f
+# Sources: stream-sink/dependencies/group01
+# Auto-generated - do not edit
+
+futures-core = { version = "0.3.30", default-features = false }
+futures-sink = { version = "0.3.30", default-features = false }

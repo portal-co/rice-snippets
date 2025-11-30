@@ -1,5 +1,1 @@
-# Source: portal-co/gorf
-# Section: [workspace.dependencies] - Group 8
-# Auto-generated - do not edit
-
-whisk = "0.12.0"
+../cargo-hashed/e2c4fa5aac8ce631.toml

@@ -1,7 +1,1 @@
-# Source: portal-co/minicoro-awaiters
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-atomic-waker = "^1.1.2"
-awaiter-trait = "^0.2.7"
-minicoroutine = { version = "0.1.3" }
+../cargo-hashed/1aa3da1370b7e1f0.toml

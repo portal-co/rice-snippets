@@ -1,0 +1,8 @@
+# Hash: fc56646029a6409bb33ed9428d69b7a7205278c0743fa27f63e3023889c2fbfa
+# Sources: portal-solutions-ai-interface/dependencies/group02
+# Auto-generated - do not edit
+
+serde.workspace = true
+serde_json.workspace = true
+wasm-bindgen = {workspace = true,optional = true}
+wasm-bindgen-futures = {workspace = true,optional = true}

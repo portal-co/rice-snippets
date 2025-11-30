@@ -1,6 +1,1 @@
-# Source: portal-co/rebornpack
-# Section: [workspace.dependencies] - Group 9
-# Auto-generated - do not edit
-
-embedded-io-adapters = {version="0.6.1",features=["futures-03"]}
-# more-waffle={path="./ratpack/more-waffle"}
+../cargo-hashed/7d415883c770c193.toml

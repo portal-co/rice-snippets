@@ -1,0 +1,6 @@
+# Hash: eb4804c0adbd477968cc32c7b1ef8f116b8f59d1d6218590c7a193b4eba6336d
+# Sources: speet/workspace-dependencies/group03, vane/workspace-dependencies/group03
+# Auto-generated - do not edit
+
+portal-solutions-asm-semantics = {version = "0.1.0",git = "https://github.com/portal-co/asm-arch.git"}
+asim-core = { version = "0.1.0", git = "https://github.com/portal-co/asim.git", branch = "main" }

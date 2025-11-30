@@ -1,6 +1,1 @@
-# Source: portal-co/arena-traits
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-id-arena = { version = "2.2.1", optional = true }
-portal-solutions-id-arena = { version = "2.2.2", default-features = false, optional = true }
+../cargo-hashed/e2059b75fa4d259d.toml

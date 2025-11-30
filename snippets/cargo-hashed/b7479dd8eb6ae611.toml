@@ -1,0 +1,14 @@
+# Hash: b7479dd8eb6ae611ba7b9499e7211012d5eafadf664693023e668b1cef575be9
+# Sources: embedded-io-convert/dependencies/group02
+# Auto-generated - do not edit
+
+embedded-io-adapters = {version="^0.7",features=[]}
+embedded-io-async = "^0.7"
+futures = { version = "^0.3.30", optional = true }
+merge-io = { version = "^0.3.0", optional = true }
+no-std-async = "^1.1.2"
+# embedded-io-adapters.workspace = true
+# embedded-io-async.workspace = true
+# futures.workspace = true
+# merge-io.workspace = true
+pin-project = "^1.1.3"

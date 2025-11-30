@@ -1,7 +1,1 @@
-# Source: portal-co/soda
-# Section: [workspace.dependencies] - Group 9
-# Auto-generated - do not edit
-
-ic-wasi-polyfill={git="https://github.com/wasm-forge/ic-wasi-polyfill.git"}
-nlj-core={path="./neeluj/nlj-core"}
-ic-cdk = "0.12.1"
+../cargo-hashed/5b0923b15480b7fb.toml

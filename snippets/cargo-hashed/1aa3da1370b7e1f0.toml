@@ -1,0 +1,7 @@
+# Hash: 1aa3da1370b7e1f0f0262f0d5d16a414f91baf103542f97a74533e3e9e8e9180
+# Sources: minicoro-awaiters/dependencies/group01
+# Auto-generated - do not edit
+
+atomic-waker = "^1.1.2"
+awaiter-trait = "^0.2.7"
+minicoroutine = { version = "0.1.3" }

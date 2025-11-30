@@ -1,0 +1,7 @@
+# Hash: bf35d22a7dc9bb6fcda1d412c1a2b9d39b578329431e52e30c83aba41c11a6f2
+# Sources: hermitking/dependencies/group01
+# Auto-generated - do not edit
+
+clap = { version = "4.5.50", features = ["derive"] }
+include_dir = "0.7.4"
+itertools = "0.14.0"

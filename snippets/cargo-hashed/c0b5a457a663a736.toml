@@ -1,0 +1,6 @@
+# Hash: c0b5a457a663a7369bedc9486a99c174ef1235dc4769f0de32d3961a0e774fae
+# Sources: gorf/workspace-dependencies/group11, rebornpack/workspace-dependencies/group11
+# Auto-generated - do not edit
+
+wasmi = "0.31.1"
+wasm_runtime_layer = { version = "0.4.0" }

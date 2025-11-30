@@ -1,0 +1,17 @@
+# Hash: 3898218ad2865acb25a7287908e18a6e64c279d0f247e476aab90f0f74251034
+# Sources: waco/workspace-dependencies/group06
+# Auto-generated - do not edit
+
+swc_atoms = "^7.0.0"
+swc_common = "^14.0.0"
+swc_ecma_ast = "^15.0.0"
+swc_ecma_compat_es2015 = "^26.0.0"
+swc_ecma_minifier = "^30.0.0"
+swc_ecma_transforms_base = "^25.0.0"
+swc_ecma_transforms_optimization = "^26.0.0"
+swc_ecma_utils = "^21.0.0"
+swc_ecma_visit = "^15.0.0"
+swc_bundler = "^29.0.0"
+swc_ecma_loader = "^14.0.0"
+swc_ecma_parser = "^23.0.0"
+swc_ecma_codegen = "^17"

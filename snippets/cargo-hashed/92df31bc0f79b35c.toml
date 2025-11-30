@@ -1,0 +1,8 @@
+# Hash: 92df31bc0f79b35cca9b0f7ebfcf0eb0cefee1b4c6d758f5e22b5f29f97a0246
+# Sources: axum-wist/dependencies/group01
+# Auto-generated - do not edit
+
+axum = { version = "^0.8.3", default-features = false, features = ["http1"] }
+bytes = "^1.10.1"
+rand = "^0.9.0"
+wist = "^0.1.4"

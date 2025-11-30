@@ -1,0 +1,6 @@
+# Hash: 8e3b1326bfeb53b453870bea0e22f346c0ad0833fd46a5224f8eeac1e71794be
+# Sources: gorf/workspace-dependencies/group13, rebornpack/workspace-dependencies/group13, soda/workspace-dependencies/group07
+# Auto-generated - do not edit
+
+libp2p = "0.53.2"
+libp2p-stream = "0.1.0-alpha"

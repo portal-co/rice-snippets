@@ -1,0 +1,10 @@
+# Hash: 24950a70f7f90c037a9fc4d40a8ff5569032b6a17cbf410b7eb702e836a05a59
+# Sources: waco/workspace-dependencies/group05
+# Auto-generated - do not edit
+
+id-arena = "^2.2.1"
+arena-traits = {version="^0.2.3",features=["id-arena"]}
+ssa-traits = "^0.2.3"
+cfg-traits = "^0.2.3"
+ssa-impls =  "^0.2.3"
+ssa-reloop = "^0.2.3"

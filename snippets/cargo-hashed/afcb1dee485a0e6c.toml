@@ -1,0 +1,8 @@
+# Hash: afcb1dee485a0e6c075c02de29cb874936ec05c8c3b56834d291c78d2302fd28
+# Sources: gorf/workspace-dependencies/group12, rebornpack/workspace-dependencies/group12, soda/workspace-dependencies/group06
+# Auto-generated - do not edit
+
+syn-serde = { version = "0.3", features = ["json"] }
+syn = { version = "2", features = ["full"] }
+proc-macro2 = "1.0.78"
+quote = "1.0.35"

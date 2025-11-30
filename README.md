@@ -17,8 +17,11 @@ rice-snippets/
 │   │   ├── {repo}_dev-dependencies.toml
 │   │   ├── {repo}_workspace-dependencies.toml
 │   │   └── README.md
-│   └── cargo-grouped/        # Dependencies split by logical groups (blank lines)
-│       ├── {repo}_{section}_group{NN}.toml
+│   ├── cargo-grouped/        # Symlinks to hash-based snippets
+│   │   ├── {repo}_{section}_group{NN}.toml -> ../cargo-hashed/{hash}.toml
+│   │   └── README.md
+│   └── cargo-hashed/         # Deduplicated snippets by SHA256 hash
+│       ├── {hash}.toml
 │       └── README.md
 └── scripts/
     └── download_cargo_deps.py  # Script to download and extract dependencies
@@ -30,22 +33,22 @@ rice-snippets/
 
 Browse `snippets/cargo/` for complete dependency sections from each repository.
 
-### Using Grouped Snippets
+### Using Grouped Snippets (by name)
 
-Browse `snippets/cargo-grouped/` for smaller, logically grouped dependency sets. 
-These are split by blank lines in the original Cargo.toml files, allowing you to 
-copy just the related dependencies you need.
+Browse `snippets/cargo-grouped/` for smaller, logically grouped dependency sets.
+These are symlinks to deduplicated content in `cargo-hashed/`.
 
-Example: `gorf_workspace-dependencies_group03.toml` contains:
-```toml
-spin-sdk = "3.0.1"
-url = { version = "2", features = ["serde"] }
-dumpster = "0.1.2"
-```
+Example: `gorf_workspace-dependencies_group03.toml` links to a shared snippet.
+
+### Using Hash-Based Snippets (deduplicated)
+
+Browse `snippets/cargo-hashed/` for unique, content-addressable snippets.
+These are identified by their SHA256 hash and can be referenced directly.
+Shared snippets list all their sources in the file header.
 
 ### Regenerating Snippets
 
-To update the snippets with the latest dependencies from portal-co repositories:
+The script automatically discovers Rust repositories in the portal-co organization:
 
 ```bash
 python3 scripts/download_cargo_deps.py
@@ -56,7 +59,8 @@ python3 scripts/download_cargo_deps.py
 - **96 repositories** scanned
 - **92 repositories** with dependencies extracted
 - **98 dependency sections** generated
-- **193 grouped snippets** created
+- **192 grouped snippets** created
+- **158 unique content hashes** (25 shared across multiple sources)
 
 ## License
 

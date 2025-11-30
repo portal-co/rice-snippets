@@ -1,10 +1,1 @@
-# Source: portal-co/waco
-# Section: [workspace.dependencies] - Group 5
-# Auto-generated - do not edit
-
-id-arena = "^2.2.1"
-arena-traits = {version="^0.2.3",features=["id-arena"]}
-ssa-traits = "^0.2.3"
-cfg-traits = "^0.2.3"
-ssa-impls =  "^0.2.3"
-ssa-reloop = "^0.2.3"
+../cargo-hashed/24950a70f7f90c03.toml

@@ -1,0 +1,6 @@
+# Hash: c6bd78b6194ff1d6d43550fa1e55330aafa7486f6c8ce8fe9a83ce47fe837c12
+# Sources: asm-common/dependencies/group03
+# Auto-generated - do not edit
+
+serde = { version = "1.0.217", features = ["derive"], default-features = false, optional = true }
+sha3 = { version = "0.10.8", default-features = false, optional = true }

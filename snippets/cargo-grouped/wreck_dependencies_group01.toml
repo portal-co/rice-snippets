@@ -1,6 +1,1 @@
-# Source: portal-co/wreck
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-embedded-io = "0.6.1"
-iced-x86 = { version = "1.21.0", default-features = false, optional = true, features = ["code_asm", "no_std"] }
+../cargo-hashed/875ef11de946e472.toml

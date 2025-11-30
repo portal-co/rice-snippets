@@ -1,0 +1,11 @@
+# Hash: 1277b9f1f418f5cccc43853328522a3fc3aebd84a9c69096b82e85d18dfef026
+# Sources: music-blender/dependencies/group01
+# Auto-generated - do not edit
+
+entropy = "0.4.2"
+fundsp = "0.20.0"
+hex = "0.4.3"
+itertools = "0.14.0"
+rayon = "1.11.0"
+sha3 = "0.10.8"
+walkdir = "2.5.0"

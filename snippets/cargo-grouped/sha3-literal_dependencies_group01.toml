@@ -1,10 +1,1 @@
-# Source: portal-co/sha3-literal
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-hex = "0.4.3"
-paste = "1.0.15"
-proc-macro2 = "^1.0.94"
-quote = "^1.0.40"
-sha3 = "^0.10.8"
-syn = { version = "^2.0.100", features = ["full"] }
+../cargo-hashed/f3685b9e257b6eb0.toml

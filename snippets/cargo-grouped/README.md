@@ -1,11 +1,11 @@
 # Cargo Dependency Snippets (Grouped)
 
-This directory contains dependency sections split by logical groupings
-(separated by blank lines in the original Cargo.toml files).
+This directory contains symlinks to deduplicated dependency snippets.
+Each symlink points to a hash-based file in `cargo-hashed/`.
 
 ## Naming Convention
 
-Files are named: `{repo}_{section}_group{NN}.toml`
+Symlinks are named: `{repo}_{section}_group{NN}.toml`
 
 Where:
 - `{repo}` is the repository name
@@ -14,10 +14,11 @@ Where:
 
 ## Usage
 
-These smaller snippets allow you to copy just the dependencies you need
-without including unrelated packages.
+These symlinks allow you to reference snippets by their source location
+while the actual content is deduplicated in `cargo-hashed/`.
 
 Total grouped snippets: 192
+Unique content files: 158
 
 
 *Generated automatically by download_cargo_deps.py*

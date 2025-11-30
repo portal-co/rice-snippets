@@ -1,0 +1,5 @@
+# Hash: 74d8fdee6ccf678bf196dbc4b017698a7d726ff13115d5fef8104bf6e822c7d1
+# Sources: weev/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+mutex_trait2 = {path="./mutex_trait2",version="0.4.0"}

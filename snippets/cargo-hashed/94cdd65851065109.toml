@@ -1,0 +1,12 @@
+# Hash: 94cdd6585106510948ca3cbf7d87f8cdaaf5052b4c45e6ce8e6016252fd9c1ad
+# Sources: gorf/workspace-dependencies/group18, talc/workspace-dependencies/group04
+# Auto-generated - do not edit
+
+swc_atoms = "2.0.0"
+swc_common = "4.0.0"
+swc_ecma_ast = "4.0.0"
+swc_ecma_compat_es2015 = "5.0.0"
+swc_ecma_minifier = "5.0.0"
+swc_ecma_transforms_base = "5.0.0"
+swc_ecma_utils = "5.0.0"
+swc_ecma_visit = "4.0.0"

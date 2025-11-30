@@ -1,5 +1,1 @@
-# Source: portal-co/valser
-# Section: [dependencies] - Group 1
-# Auto-generated - do not edit
-
-either = { version = "1.13.0", default-features = false }
+../cargo-hashed/a05263065dcdf548.toml

@@ -1,0 +1,6 @@
+# Hash: 72dd6768af01a3502ecc590a12292326e5b72fb11c34498dfbb635d4c7abab4b
+# Sources: elegant-pairing/dependencies/group01
+# Auto-generated - do not edit
+
+num-integer = { version = "0.1.46", default-features = false }
+num-traits = { version = "0.2.19", default-features = false }

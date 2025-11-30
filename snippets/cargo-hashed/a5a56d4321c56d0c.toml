@@ -1,0 +1,7 @@
+# Hash: a5a56d4321c56d0c1434db29f7c51056b77f89272395aba510168cd0e00d52d9
+# Sources: stern-bijection/dependencies/group01
+# Auto-generated - do not edit
+
+num-integer = { version = "0.1.46", default-features = false }
+num-rational = { version = "0.4.2", default-features = false }
+num-traits = { version = "0.2.19", default-features = false }

@@ -1,5 +1,1 @@
-# Source: portal-co/scrave
-# Section: [workspace.dependencies] - Group 1
-# Auto-generated - do not edit
-
-image = "0.25.8"
+../cargo-hashed/5d8dec7dbb3c92ed.toml

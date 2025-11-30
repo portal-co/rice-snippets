@@ -1,0 +1,5 @@
+# Hash: e2c4fa5aac8ce6313f62f1d54de658d2a6c266e4254eec697dfca048241fee0e
+# Sources: gorf/workspace-dependencies/group08, rebornpack/workspace-dependencies/group08
+# Auto-generated - do not edit
+
+whisk = "0.12.0"

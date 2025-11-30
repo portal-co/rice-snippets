@@ -1,14 +1,1 @@
-# Source: portal-co/portal-solutions-ai-interface
-# Section: [workspace.dependencies] - Group 1
-# Auto-generated - do not edit
-
-extism-pdk = "1.1.0"
-chrono = { version = "0.4", features = ["serde"] }
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-base64-serde = "0.7"
-base64 = "0.21"
-boa_engine = "0.20.0"
-anyhow = "1.0.100"
-wasm-bindgen = "0.2.104"
-wasm-bindgen-futures = "0.4.54"
+../cargo-hashed/50d30ccd6cb7ed4f.toml

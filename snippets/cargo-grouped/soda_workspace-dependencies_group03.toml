@@ -1,6 +1,1 @@
-# Source: portal-co/soda
-# Section: [workspace.dependencies] - Group 3
-# Auto-generated - do not edit
-
-wappy-proto={path="./wappy/wappy-proto"}
-wappy-wasm={path="./wappy/wappy-wasm"}
+../cargo-hashed/7d1291ae0b4fbcf3.toml

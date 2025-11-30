@@ -1,0 +1,10 @@
+# Hash: 92d7bdd452b61cfbeae01f583e3f77f10011847a61a60c19f9188a4f3829d015
+# Sources: asm-arch/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+portal-pc-asm-common = { version = "0.1.1", git = "https://github.com/portal-co/asm-common.git" }
+typeid = "1.0.3"
+iced-x86 = { version = "1.21.0", default-features = false }
+rv-asm = { version = "*", git = "https://github.com/portal-co/rv-utils.git" }
+rabbitizer = "1.14.3"
+powerpc = "0.4.1"

@@ -1,6 +1,1 @@
-# Source: portal-co/gorf
-# Section: [workspace.dependencies] - Group 11
-# Auto-generated - do not edit
-
-wasmi = "0.31.1"
-wasm_runtime_layer = { version = "0.4.0" }
+../cargo-hashed/c0b5a457a663a736.toml

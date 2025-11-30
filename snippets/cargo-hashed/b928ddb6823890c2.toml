@@ -1,0 +1,7 @@
+# Hash: b928ddb6823890c21b165c3a0e7021327ebe03bb712f5e8281191d718735e217
+# Sources: llvm-codegen-utils/workspace-dependencies/group02
+# Auto-generated - do not edit
+
+arena-traits="^0.2.0"
+cfg-traits="^0.3.0-alpha.0"
+ssa-traits="^0.3.0-alpha.0"

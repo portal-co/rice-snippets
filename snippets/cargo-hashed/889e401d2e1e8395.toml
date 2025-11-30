@@ -1,0 +1,8 @@
+# Hash: 889e401d2e1e839545b2705bbb890ad61377a64c34c4f440983a00a8737b25c9
+# Sources: vane/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+wasmparser = { version = "0.239.0", default-features = false }
+wasm-encoder = { version = "0.239.0", default-features = false, features = [
+    "wasmparser",
+] }

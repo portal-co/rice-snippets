@@ -1,0 +1,5 @@
+# Hash: 0d4e09649285b2fa30eb5e60729c2dc6f7a3be1ccb4232d226c58326db688691
+# Sources: gorf/workspace-dependencies/group01
+# Auto-generated - do not edit
+
+lambda_calculus = {git="https://github.com/portal-co/lambda_calculus.git",branch="pr/no_std",version=">= 3.3.0, < 5.0.0"}

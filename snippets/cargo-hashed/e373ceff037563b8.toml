@@ -1,0 +1,10 @@
+# Hash: e373ceff037563b8ef028ef541737bc925340a8ad52dd9b45952879065f55c7f
+# Sources: wasmsign3/dependencies/group01
+# Auto-generated - do not edit
+
+embedded-io.workspace = true  # = "0.6.1"
+portal-solutions-wasmsign3-module = { version = "0.1.0", path = "module" }
+sha3.workspace = true         # = { version = "0.10.8", default-features = false }
+sha3-literal.workspace = true # = "0.1.0"
+slh-dsa.workspace = true      # = { version = "0.0.3", default-features = false }
+typenum.workspace = true      # = "1.18.0"

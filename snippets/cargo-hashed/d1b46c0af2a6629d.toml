@@ -1,0 +1,7 @@
+# Hash: d1b46c0af2a6629d9f7d2e39936ce07937c04c140db9853f0147dd32785d846c
+# Sources: jsaw/workspace-dependencies/group10
+# Auto-generated - do not edit
+
+px-llvm-codegen-utils-core="^0.1.4"
+px-llvm-codegen-utils-info="^0.1.4"
+portal-pc-asm-common = "^0.1.0"
