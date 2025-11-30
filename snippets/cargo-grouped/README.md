@@ -17,7 +17,7 @@ Where:
 These smaller snippets allow you to copy just the dependencies you need
 without including unrelated packages.
 
-Total grouped snippets: 193
+Total grouped snippets: 192
 
 
 *Generated automatically by download_cargo_deps.py*

@@ -131,10 +131,13 @@ def split_by_blank_lines(content: str) -> List[str]:
     """
     Split content into groups separated by blank lines.
     Returns a list of non-empty groups.
+    Handles multi-line TOML entries (entries spanning multiple lines).
     """
     lines = content.split('\n')
     groups = []
     current_group = []
+    in_multiline = False
+    bracket_count = 0
     
     # Skip the section header line (e.g., [dependencies])
     start_idx = 0
@@ -146,12 +149,30 @@ def split_by_blank_lines(content: str) -> List[str]:
     for line in lines[start_idx:]:
         stripped = line.strip()
         
+        # Track multiline entries (count brackets)
+        if not in_multiline:
+            # Check if this line starts a multi-line entry
+            open_count = line.count('[') + line.count('{')
+            close_count = line.count(']') + line.count('}')
+            if open_count > close_count:
+                in_multiline = True
+                bracket_count = open_count - close_count
+        else:
+            # Update bracket count
+            open_count = line.count('[') + line.count('{')
+            close_count = line.count(']') + line.count('}')
+            bracket_count += open_count - close_count
+            if bracket_count <= 0:
+                in_multiline = False
+                bracket_count = 0
+        
         # Check for blank line (empty or only whitespace)
-        if not stripped:
+        # Only split on blank lines if we're not in a multi-line entry
+        if not stripped and not in_multiline:
             if current_group:
-                # Filter out comment-only groups
+                # Filter out comment-only groups and malformed snippets
                 has_deps = any(
-                    l.strip() and not l.strip().startswith('#') 
+                    l.strip() and not l.strip().startswith('#') and '=' in l
                     for l in current_group
                 )
                 if has_deps:
@@ -163,7 +184,7 @@ def split_by_blank_lines(content: str) -> List[str]:
     # Don't forget the last group
     if current_group:
         has_deps = any(
-            l.strip() and not l.strip().startswith('#') 
+            l.strip() and not l.strip().startswith('#') and '=' in l
             for l in current_group
         )
         if has_deps:

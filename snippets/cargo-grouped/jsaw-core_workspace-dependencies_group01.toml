@@ -10,3 +10,6 @@ portal-jsc-swc-util = { version = "^0.8.0-pre.10", path = "crates/swc-util", fea
     "ty",
 ] }
 portal-jsc-simpl-js = { version = "^0.8.0-pre.10", path = "crates/simpl-js", features = [
+   
+] }
+portal-jsc-common = { version = "^0.8.0-pre.10", path = "crates/portal-jsc-common" }
