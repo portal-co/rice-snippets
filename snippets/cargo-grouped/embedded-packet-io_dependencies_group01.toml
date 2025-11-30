@@ -1,0 +1,7 @@
+# Source: portal-co/embedded-packet-io
+# Section: [dependencies] - Group 1
+# Auto-generated - do not edit
+
+embedded-io = { version = "0.6.1", default-features = false }
+embedded-io-async = { version = "0.6.1", default-features = false }
+heapless = "0.8.0"

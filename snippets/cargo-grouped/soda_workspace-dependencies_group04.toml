@@ -1,0 +1,12 @@
+# Source: portal-co/soda
+# Section: [workspace.dependencies] - Group 4
+# Auto-generated - do not edit
+
+serde = { version = "1.0", features = ["derive"] }
+simple-encryption={path="./simple-encryption"}
+whisk = "0.12.0"
+blitz-p2p={path="./blitz-p2p"}
+embedded-io-adapters = {version="0.6.1",features=["futures-03"]}
+more-waffle={path="./more-waffle"}
+waffle-ic={path="./waffle-ic"}
+postcard = {version="1.0.8",features=["alloc"]}

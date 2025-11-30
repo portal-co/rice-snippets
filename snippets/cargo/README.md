@@ -8,6 +8,8 @@ across the portal-co organization repositories.
 These snippets can be used as templates for new Rust projects.
 Simply copy the relevant dependencies into your Cargo.toml file.
 
+For smaller, logically grouped snippets, see the `cargo-grouped/` directory.
+
 ## Repositories with Dependencies
 
 - [amgo](https://github.com/portal-co/amgo)

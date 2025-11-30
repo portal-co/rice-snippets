@@ -1,0 +1,8 @@
+# Source: portal-co/jsaw
+# Section: [workspace.dependencies] - Group 11
+# Auto-generated - do not edit
+
+bitvec = "^1.0.1"
+instability = "^0.3.7"
+linearize = "^0.1.4"
+linearize-derive = "^0.1.0"

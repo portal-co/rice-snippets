@@ -1,0 +1,6 @@
+# Source: portal-co/gorf
+# Section: [workspace.dependencies] - Group 14
+# Auto-generated - do not edit
+
+iroh-net = "0.12.0"
+quinn = {version="0.10.2",features=["futures-io"]}

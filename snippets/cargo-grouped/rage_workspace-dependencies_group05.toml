@@ -1,0 +1,5 @@
+# Source: portal-co/rage
+# Section: [workspace.dependencies] - Group 5
+# Auto-generated - do not edit
+
+rage-common = { version = "0.1.0", path = "crates/rage-common" }

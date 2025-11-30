@@ -1,0 +1,7 @@
+# Source: portal-co/gorf
+# Section: [workspace.dependencies] - Group 3
+# Auto-generated - do not edit
+
+spin-sdk = "3.0.1"
+url = { version = "2", features = ["serde"] }
+dumpster = "0.1.2"

@@ -1,0 +1,6 @@
+# Source: portal-co/waco
+# Section: [workspace.dependencies] - Group 2
+# Auto-generated - do not edit
+
+cranelift-frontend = "0.123.2"
+cranelift-codegen = "0.123.2"

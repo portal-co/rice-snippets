@@ -1,0 +1,5 @@
+# Source: portal-co/waco
+# Section: [workspace.dependencies] - Group 8
+# Auto-generated - do not edit
+
+awaiter-trait = "0.2.8"

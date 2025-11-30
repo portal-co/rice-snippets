@@ -1,0 +1,5 @@
+# Source: portal-co/rage
+# Section: [workspace.dependencies] - Group 6
+# Auto-generated - do not edit
+
+bronzite-client = { version = "0.1.0", git = "https://github.com/DrewRidley/bronzite.git", branch = "main" }

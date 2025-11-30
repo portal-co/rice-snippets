@@ -1,0 +1,13 @@
+# Source: portal-co/pair
+# Section: [dependencies] - Group 1
+# Auto-generated - do not edit
+
+anyhow = "1.0.77"
+either = "1.9.0"
+id-arena = "2.2.1"
+proc-macro2 = {version="1.0.71",optional=true}
+quote = {version="1.0.33",optional=true}
+relooper = "0.1.0"
+serde = {version="1.0.193",optional=true}
+syn = {version="2.0.43",optional=true}
+waffle = {version="0.0.22",optional=true}

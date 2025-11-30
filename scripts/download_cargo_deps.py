@@ -2,6 +2,8 @@
 """
 Download Cargo.toml files from portal-co organization repositories
 and extract dependency sections for templating.
+
+Dependencies are split by logical groupings (blank lines) into separate files.
 """
 
 import os
@@ -10,7 +12,7 @@ import json
 import urllib.request
 import urllib.error
 from pathlib import Path
-from typing import Optional
+from typing import Optional, List, Tuple
 
 # List of Rust repositories in portal-co organization (manually compiled from GitHub search)
 RUST_REPOS = [
@@ -125,7 +127,52 @@ def extract_dependency_sections(content: str) -> dict:
     return sections
 
 
-def save_snippet(output_dir: Path, repo: str, section_name: str, content: str):
+def split_by_blank_lines(content: str) -> List[str]:
+    """
+    Split content into groups separated by blank lines.
+    Returns a list of non-empty groups.
+    """
+    lines = content.split('\n')
+    groups = []
+    current_group = []
+    
+    # Skip the section header line (e.g., [dependencies])
+    start_idx = 0
+    for i, line in enumerate(lines):
+        if re.match(r'^\[.*\]$', line.strip()):
+            start_idx = i + 1
+            break
+    
+    for line in lines[start_idx:]:
+        stripped = line.strip()
+        
+        # Check for blank line (empty or only whitespace)
+        if not stripped:
+            if current_group:
+                # Filter out comment-only groups
+                has_deps = any(
+                    l.strip() and not l.strip().startswith('#') 
+                    for l in current_group
+                )
+                if has_deps:
+                    groups.append('\n'.join(current_group))
+                current_group = []
+        else:
+            current_group.append(line)
+    
+    # Don't forget the last group
+    if current_group:
+        has_deps = any(
+            l.strip() and not l.strip().startswith('#') 
+            for l in current_group
+        )
+        if has_deps:
+            groups.append('\n'.join(current_group))
+    
+    return groups
+
+
+def save_snippet(output_dir: Path, repo: str, section_name: str, content: str) -> Path:
     """Save a dependency snippet to a file."""
     # Create a safe filename
     safe_section = section_name.replace('.', '-').replace('/', '-')
@@ -142,15 +189,35 @@ def save_snippet(output_dir: Path, repo: str, section_name: str, content: str):
     return filepath
 
 
+def save_grouped_snippet(output_dir: Path, repo: str, section_name: str, 
+                         group_index: int, content: str) -> Path:
+    """Save a grouped dependency snippet to a file."""
+    # Create a safe filename with group index
+    safe_section = section_name.replace('.', '-').replace('/', '-')
+    filename = f"{repo}_{safe_section}_group{group_index:02d}.toml"
+    filepath = output_dir / filename
+    
+    with open(filepath, 'w') as f:
+        f.write(f"# Source: portal-co/{repo}\n")
+        f.write(f"# Section: [{section_name}] - Group {group_index}\n")
+        f.write(f"# Auto-generated - do not edit\n\n")
+        f.write(content)
+        f.write('\n')
+    
+    return filepath
+
+
 def main():
     """Main function to download and process Cargo.toml files."""
     script_dir = Path(__file__).parent.resolve()
     repo_root = script_dir.parent
     output_dir = repo_root / "snippets" / "cargo"
+    grouped_dir = repo_root / "snippets" / "cargo-grouped"
     cargo_tomls_dir = repo_root / "cargo-tomls"
     
     # Create output directories
     output_dir.mkdir(parents=True, exist_ok=True)
+    grouped_dir.mkdir(parents=True, exist_ok=True)
     cargo_tomls_dir.mkdir(parents=True, exist_ok=True)
     
     owner = "portal-co"
@@ -159,11 +226,13 @@ def main():
         'downloaded': 0,
         'failed': 0,
         'sections_extracted': 0,
+        'groups_extracted': 0,
         'repos_with_deps': []
     }
     
     print(f"Downloading Cargo.toml files from {len(RUST_REPOS)} repositories...")
     print(f"Output directory: {output_dir}")
+    print(f"Grouped directory: {grouped_dir}")
     print("-" * 60)
     
     for repo in RUST_REPOS:
@@ -190,9 +259,19 @@ def main():
         if sections:
             stats['repos_with_deps'].append(repo)
             for section_name, section_content in sections.items():
+                # Save the full section
                 filepath = save_snippet(output_dir, repo, section_name, section_content)
                 stats['sections_extracted'] += 1
                 print(f"  -> Saved {section_name} to {filepath.name}")
+                
+                # Split by blank lines and save grouped snippets
+                groups = split_by_blank_lines(section_content)
+                for i, group in enumerate(groups, 1):
+                    group_path = save_grouped_snippet(
+                        grouped_dir, repo, section_name, i, group
+                    )
+                    stats['groups_extracted'] += 1
+                    print(f"     -> Group {i}: {group_path.name}")
     
     print("-" * 60)
     print(f"\nSummary:")
@@ -200,9 +279,10 @@ def main():
     print(f"  Successfully downloaded: {stats['downloaded']}")
     print(f"  Failed: {stats['failed']}")
     print(f"  Dependency sections extracted: {stats['sections_extracted']}")
+    print(f"  Grouped snippets created: {stats['groups_extracted']}")
     print(f"  Repos with dependencies: {len(stats['repos_with_deps'])}")
     
-    # Save summary
+    # Save summary for main snippets
     summary_path = output_dir / "README.md"
     with open(summary_path, 'w') as f:
         f.write("# Cargo Dependency Snippets\n\n")
@@ -211,13 +291,32 @@ def main():
         f.write("## Usage\n\n")
         f.write("These snippets can be used as templates for new Rust projects.\n")
         f.write("Simply copy the relevant dependencies into your Cargo.toml file.\n\n")
+        f.write("For smaller, logically grouped snippets, see the `cargo-grouped/` directory.\n\n")
         f.write("## Repositories with Dependencies\n\n")
         for repo in sorted(stats['repos_with_deps']):
             f.write(f"- [{repo}](https://github.com/portal-co/{repo})\n")
         f.write("\n")
         f.write(f"\n*Generated automatically by download_cargo_deps.py*\n")
     
-    print(f"\nDone! Snippets saved to {output_dir}")
+    # Save summary for grouped snippets
+    grouped_summary_path = grouped_dir / "README.md"
+    with open(grouped_summary_path, 'w') as f:
+        f.write("# Cargo Dependency Snippets (Grouped)\n\n")
+        f.write("This directory contains dependency sections split by logical groupings\n")
+        f.write("(separated by blank lines in the original Cargo.toml files).\n\n")
+        f.write("## Naming Convention\n\n")
+        f.write("Files are named: `{repo}_{section}_group{NN}.toml`\n\n")
+        f.write("Where:\n")
+        f.write("- `{repo}` is the repository name\n")
+        f.write("- `{section}` is the dependency section (e.g., `dependencies`, `workspace-dependencies`)\n")
+        f.write("- `{NN}` is the group number within that section\n\n")
+        f.write("## Usage\n\n")
+        f.write("These smaller snippets allow you to copy just the dependencies you need\n")
+        f.write("without including unrelated packages.\n\n")
+        f.write(f"Total grouped snippets: {stats['groups_extracted']}\n\n")
+        f.write(f"\n*Generated automatically by download_cargo_deps.py*\n")
+    
+    print(f"\nDone! Snippets saved to {output_dir} and {grouped_dir}")
 
 
 if __name__ == "__main__":

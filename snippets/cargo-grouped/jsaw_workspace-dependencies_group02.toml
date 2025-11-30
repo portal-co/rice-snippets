@@ -1,0 +1,5 @@
+# Source: portal-co/jsaw
+# Section: [workspace.dependencies] - Group 2
+# Auto-generated - do not edit
+
+portal-pc-waffle = {version="^0.5.5"}

@@ -1,0 +1,5 @@
+# Source: portal-co/wasm-blitz
+# Section: [workspace.dependencies] - Group 2
+# Auto-generated - do not edit
+
+wax-core = {version = "0.1.0",git = "https://github.com/portal-co/wax.git",branch = "main"}

@@ -1,0 +1,7 @@
+# Source: portal-co/embedded-chacha
+# Section: [dependencies] - Group 1
+# Auto-generated - do not edit
+
+chacha20 = { version = "0.9.1", default-features = false }
+embedded-io = { version = "0.6.1", default-features = false }
+embedded-io-async = { version = "0.6.1", default-features = false }

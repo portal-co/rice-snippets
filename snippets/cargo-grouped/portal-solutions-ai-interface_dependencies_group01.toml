@@ -1,0 +1,7 @@
+# Source: portal-co/portal-solutions-ai-interface
+# Section: [dependencies] - Group 1
+# Auto-generated - do not edit
+
+anyhow.workspace = true
+boa_engine.workspace = true
+either = "1.15.0"

@@ -1,0 +1,8 @@
+# Source: portal-co/jsaw
+# Section: [workspace.dependencies] - Group 4
+# Auto-generated - do not edit
+
+ssa-traits-03 = { version = "0.3.0-alpha.2", package = "ssa-traits" ,git="https://github.com/portal-co/codegen-utils.git",branch="dev/0.3"}
+cfg-traits-03 = { version = "0.3.0-alpha.2", package = "cfg-traits" ,git="https://github.com/portal-co/codegen-utils.git",branch="dev/0.3"}
+ssa-impls-03 =  { version = "0.3.0-alpha.2", package = "ssa-impls"  ,git="https://github.com/portal-co/codegen-utils.git",branch="dev/0.3"}
+ssa-reloop-03 = { version = "0.3.0-alpha.2", package = "ssa-reloop" ,git="https://github.com/portal-co/codegen-utils.git",branch="dev/0.3"}

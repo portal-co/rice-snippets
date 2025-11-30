@@ -1,0 +1,5 @@
+# Source: portal-co/portal-solutions-sky
+# Section: [dependencies] - Group 1
+# Auto-generated - do not edit
+
+hex = { version = "0.4.3", default-features = false }

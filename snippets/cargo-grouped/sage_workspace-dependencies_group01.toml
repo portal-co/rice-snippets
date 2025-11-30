@@ -1,0 +1,6 @@
+# Source: portal-co/sage
+# Section: [workspace.dependencies] - Group 1
+# Auto-generated - do not edit
+
+# Git
+waffle={git="https://github.com/portal-co/waffle-.git",branch="pr/merge-everything"}

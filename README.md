@@ -10,24 +10,38 @@ This repository contains dependency snippets extracted from `Cargo.toml` files a
 
 ```
 rice-snippets/
-├── cargo-tomls/          # Full Cargo.toml files from each repository
+├── cargo-tomls/              # Full Cargo.toml files from each repository
 ├── snippets/
-│   └── cargo/            # Extracted dependency sections
-│       ├── {repo}_dependencies.toml
-│       ├── {repo}_dev-dependencies.toml
-│       ├── {repo}_workspace-dependencies.toml
-│       └── README.md     # List of all repositories
+│   ├── cargo/                # Full extracted dependency sections
+│   │   ├── {repo}_dependencies.toml
+│   │   ├── {repo}_dev-dependencies.toml
+│   │   ├── {repo}_workspace-dependencies.toml
+│   │   └── README.md
+│   └── cargo-grouped/        # Dependencies split by logical groups (blank lines)
+│       ├── {repo}_{section}_group{NN}.toml
+│       └── README.md
 └── scripts/
     └── download_cargo_deps.py  # Script to download and extract dependencies
 ```
 
 ## Usage
 
-### Using Snippets
+### Using Full Section Snippets
 
-1. Browse the `snippets/cargo/` directory to find relevant dependency groups
-2. Copy the dependencies you need into your `Cargo.toml` file
-3. Adjust versions as needed
+Browse `snippets/cargo/` for complete dependency sections from each repository.
+
+### Using Grouped Snippets
+
+Browse `snippets/cargo-grouped/` for smaller, logically grouped dependency sets. 
+These are split by blank lines in the original Cargo.toml files, allowing you to 
+copy just the related dependencies you need.
+
+Example: `gorf_workspace-dependencies_group03.toml` contains:
+```toml
+spin-sdk = "3.0.1"
+url = { version = "2", features = ["serde"] }
+dumpster = "0.1.2"
+```
 
 ### Regenerating Snippets
 
@@ -42,6 +56,7 @@ python3 scripts/download_cargo_deps.py
 - **96 repositories** scanned
 - **92 repositories** with dependencies extracted
 - **98 dependency sections** generated
+- **193 grouped snippets** created
 
 ## License
 

@@ -1,0 +1,7 @@
+# Source: portal-co/rage
+# Section: [workspace.dependencies] - Group 4
+# Auto-generated - do not edit
+
+proc-macro2 = { version = "^1.0.95", features = ["span-locations"] }
+syn = { version = "^2.0.104", features = ["full"] }
+quote = "^1.0.40"

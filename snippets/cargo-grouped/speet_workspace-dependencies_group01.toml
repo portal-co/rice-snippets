@@ -1,0 +1,6 @@
+# Source: portal-co/speet
+# Section: [workspace.dependencies] - Group 1
+# Auto-generated - do not edit
+
+wasmparser = { version = "0.240.0", default-features = false }
+wasm-encoder = { version = "0.240.0", default-features = false,features = ["wasmparser"] }

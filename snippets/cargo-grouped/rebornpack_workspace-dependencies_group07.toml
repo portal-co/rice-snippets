@@ -1,0 +1,5 @@
+# Source: portal-co/rebornpack
+# Section: [workspace.dependencies] - Group 7
+# Auto-generated - do not edit
+
+serde = { version = "1.0", features = ["derive"] }

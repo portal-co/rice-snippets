@@ -1,0 +1,6 @@
+# Source: portal-co/gorf
+# Section: [workspace.dependencies] - Group 4
+# Auto-generated - do not edit
+
+ipld-core = {version="0.4.1",features=["serde"]}
+cid = "0.11.1"

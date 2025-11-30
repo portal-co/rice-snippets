@@ -1,0 +1,8 @@
+# Source: portal-co/talc
+# Section: [workspace.dependencies] - Group 5
+# Auto-generated - do not edit
+
+swc-cfg = {package="portal-jsc-swc-cfg",version="0.2"}
+swc-tac = {package="portal-jsc-swc-tac",version="0.2"}
+swc-ssa = {package="portal-jsc-swc-ssa",version="0.2"}
+swc-opt-ssa = {package="portal-jsc-swc-opt-ssa",version="0.2"}

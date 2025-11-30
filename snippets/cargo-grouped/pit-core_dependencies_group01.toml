@@ -1,0 +1,10 @@
+# Source: portal-co/pit-core
+# Section: [dependencies] - Group 1
+# Auto-generated - do not edit
+
+base64 = { version = "0.22.1", default-features = false, features = ["alloc"] }
+derive_more = { version = "2", default-features = false, features = ["display"] }
+hex = { version = "0.4.3", default-features = false, features = ["alloc"] }
+instability = "0.3.7"
+nom = { version = "8", default-features = false, features = ["alloc"] }
+sha3 = { version = "0.10.8", default-features = false }

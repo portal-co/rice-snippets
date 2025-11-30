@@ -1,0 +1,7 @@
+# Source: portal-co/jsaw
+# Section: [workspace.dependencies] - Group 10
+# Auto-generated - do not edit
+
+px-llvm-codegen-utils-core="^0.1.4"
+px-llvm-codegen-utils-info="^0.1.4"
+portal-pc-asm-common = "^0.1.0"

@@ -1,0 +1,10 @@
+# Source: portal-co/rebornpack
+# Section: [workspace.dependencies] - Group 3
+# Auto-generated - do not edit
+
+jingle_sleigh={git="https://github.com/toolCHAINZ/jingle.git",branch="main"}
+ax-x86 = {git="https://github.com/portal-co/ax.git",branch="pr/wasi"}
+id-arena = {git="https://github.com/portal-co/id-arena-fork.git",branch="serialize"}
+hudsucker={git="https://github.com/portal-co/hudsucker.git",branch="pr/as-service"}
+once_map = {git="https://github.com/portal-co/once_map.git",branch="pr/clonable_lazy_map"}
+webvnc={git="https://github.com/portal-co/webgateway.git"}

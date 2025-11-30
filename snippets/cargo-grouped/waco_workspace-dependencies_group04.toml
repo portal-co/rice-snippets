@@ -1,0 +1,5 @@
+# Source: portal-co/waco
+# Section: [workspace.dependencies] - Group 4
+# Auto-generated - do not edit
+
+portal-pc-waffle = {version="^0.5.5"}

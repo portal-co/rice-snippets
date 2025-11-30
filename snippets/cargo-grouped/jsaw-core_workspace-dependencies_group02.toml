@@ -1,0 +1,6 @@
+# Source: portal-co/jsaw-core
+# Section: [workspace.dependencies] - Group 2
+# Auto-generated - do not edit
+
+] }
+portal-jsc-common = { version = "^0.8.0-pre.10", path = "crates/portal-jsc-common" }

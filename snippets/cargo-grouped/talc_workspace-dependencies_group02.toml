@@ -1,0 +1,9 @@
+# Source: portal-co/talc
+# Section: [workspace.dependencies] - Group 2
+# Auto-generated - do not edit
+
+arena-traits = { version = "0.2.1", features = ["id-arena"] }
+cfg-traits = "0.2.1"
+id-arena = "2.2.1"
+ssa-traits = "0.2.1"
+ssa-impls = "0.2.1"

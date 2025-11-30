@@ -1,0 +1,6 @@
+# Source: portal-co/rebornpack
+# Section: [workspace.dependencies] - Group 11
+# Auto-generated - do not edit
+
+wasmi = "0.31.1"
+wasm_runtime_layer = { version = "0.4.0" }

@@ -1,0 +1,6 @@
+# Source: portal-co/jsaw
+# Section: [workspace.dependencies] - Group 7
+# Auto-generated - do not edit
+
+anyhow = "^1.0.87"
+bimap = "^0.6.3"

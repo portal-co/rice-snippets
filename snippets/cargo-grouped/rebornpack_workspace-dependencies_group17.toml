@@ -1,0 +1,9 @@
+# Source: portal-co/rebornpack
+# Section: [workspace.dependencies] - Group 17
+# Auto-generated - do not edit
+
+arti-client = {version="0.14.1",features=["onion-service-service","onion-service-client"]}
+tor-hsservice = "=0.8.0"
+tor-rtcompat = "=0.10.0"
+tor-cell = "0.16.1"
+tor-hscrypto = "0.6.1"

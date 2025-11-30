@@ -1,0 +1,6 @@
+# Source: portal-co/portal-solutions-extism-compat
+# Section: [dependencies] - Group 1
+# Auto-generated - do not edit
+
+base64 = "0.22.1"
+extism-pdk = "1.4.1"

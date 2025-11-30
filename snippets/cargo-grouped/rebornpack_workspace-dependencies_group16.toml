@@ -1,0 +1,5 @@
+# Source: portal-co/rebornpack
+# Section: [workspace.dependencies] - Group 16
+# Auto-generated - do not edit
+
+ic-cdk = "0.12.1"

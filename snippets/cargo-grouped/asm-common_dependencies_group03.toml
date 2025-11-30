@@ -1,0 +1,6 @@
+# Source: portal-co/asm-common
+# Section: [dependencies] - Group 3
+# Auto-generated - do not edit
+
+serde = { version = "1.0.217", features = ["derive"], default-features = false, optional = true }
+sha3 = { version = "0.10.8", default-features = false, optional = true }

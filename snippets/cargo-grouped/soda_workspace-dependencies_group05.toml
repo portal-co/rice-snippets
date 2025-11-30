@@ -1,0 +1,7 @@
+# Source: portal-co/soda
+# Section: [workspace.dependencies] - Group 5
+# Auto-generated - do not edit
+
+wasmi = "0.31.1"
+wasm_runtime_layer = { version = "0.2.1", features = [ "backend_wasmi" ] }
+wasm-async-layer={path="./wasm-async-layer"}

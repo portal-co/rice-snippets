@@ -1,0 +1,6 @@
+# Source: portal-co/speet
+# Section: [workspace.dependencies] - Group 3
+# Auto-generated - do not edit
+
+portal-solutions-asm-semantics = {version = "0.1.0",git = "https://github.com/portal-co/asm-arch.git"}
+asim-core = { version = "0.1.0", git = "https://github.com/portal-co/asim.git", branch = "main" }

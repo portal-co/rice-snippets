@@ -1,0 +1,10 @@
+# Source: portal-co/llvm-codegen-utils
+# Section: [workspace.dependencies] - Group 1
+# Auto-generated - do not edit
+
+# GEN LLVM
+llvm-sys-190={version="^191",package="llvm-sys"}
+llvm-sys-180={version="^181",package="llvm-sys"}
+llvm-sys-200={version="^201",package="llvm-sys"}
+llvm-sys-210={version="^211",package="llvm-sys"}
+# RESUME
