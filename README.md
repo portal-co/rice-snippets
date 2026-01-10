@@ -65,3 +65,12 @@ python3 scripts/download_cargo_deps.py
 ## License
 
 See [LICENSE](LICENSE) for details.
+
+## Goals
+- [ ] Add project goals
+
+## Progress
+- [ ] Initial setup
+
+---
+*AI assisted*
