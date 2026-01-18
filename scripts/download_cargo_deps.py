@@ -21,7 +21,7 @@ def discover_rust_repos(owner: str, per_page: int = 100) -> List[Dict]:
     """
     Automatically discover Rust repositories in the organization using GitHub API.
     Returns a list of repository info dicts with name and default_branch.
-    Falls back to a hardcoded list if the API fails.
+    Raises an exception if the API fails.
     """
     repos = []
     page = 1
@@ -56,61 +56,16 @@ def discover_rust_repos(owner: str, per_page: int = 100) -> List[Dict]:
                 page += 1
                 
         except urllib.error.HTTPError as e:
-            print(f"  [WARN] GitHub API error: {e.code}, using fallback list")
-            return get_fallback_repos()
+            print(f"  [ERROR] GitHub API error: {e.code}")
+            raise
         except Exception as e:
-            print(f"  [WARN] Failed to discover repos: {e}, using fallback list")
-            return get_fallback_repos()
+            print(f"  [ERROR] Failed to discover repos: {e}")
+            raise
     
     if not repos:
-        print("  [WARN] No repos found via API, using fallback list")
-        return get_fallback_repos()
+        raise RuntimeError("No repositories found via GitHub API")
     
     print(f"  Found {len(repos)} Rust repositories")
-    return repos
-
-
-def get_fallback_repos() -> List[Dict]:
-    """Return a fallback list of known Rust repositories."""
-    # Hardcoded list of known Rust repos with their default branches
-    known_repos = [
-        ("rift", "main"), ("scrave", "main"), ("corwake", "main"), ("hermitking", "main"),
-        ("valser", "master"), ("hash-based-signature", "main"), ("embedded-llm", "main"),
-        ("axum-wist", "main"), ("portal-core", "main"), ("no-error", "main"),
-        ("wreck", "main"), ("iob", "main"), ("libtut", "main"), ("boople", "main"),
-        ("koffle", "main"), ("shufl", "main"), ("crust-cage", "main"), ("bf-beef", "main"),
-        ("portal-solutions-ai-interface", "main"), ("mx6502", "main"), ("wars2", "main"),
-        ("mplbeem", "main"), ("portal-solutions-extism-compat", "main"), ("wax", "main"),
-        ("dog-park-repellant", "main"), ("weev", "master"), ("stern-bijection", "main"),
-        ("elegant-pairing", "master"), ("proxy-signs", "main"), ("amgo", "main"),
-        ("vane", "main"), ("corki", "main"), ("gorf", "main"), ("rice", "main"),
-        ("nanbox", "main"), ("music-blender", "main"), ("awaiter-trait", "main"),
-        ("panic-ub", "main"), ("llvm-codegen-utils", "master"), ("asm-arch", "main"),
-        ("talc", "master"), ("pit-core", "main"), ("more_waffle", "master"),
-        ("trust-ident", "main"), ("ribose", "main"), ("static-async-concurrency", "main"),
-        ("bysyncify", "main"), ("otp-stream", "master"), ("portal-solutions-sdk", "main"),
-        ("jsaw", "master"), ("simpl", "main"), ("embedded-chacha", "main"),
-        ("simple-encryption", "master"), ("xtp-schema", "main"), ("rv-emit", "main"),
-        ("sage", "master"), ("debuff", "main"), ("blang", "main"), ("andes", "main"),
-        ("portal-solutions-sky", "main"), ("more-pit", "main"), ("asm-common", "main"),
-        ("rage", "main"), ("rewd", "main"), ("embedded-packet-io", "main"),
-        ("pupi", "main"), ("fmt-fix", "main"), ("i4delt", "main"), ("tipsy", "main"),
-        ("morphic", "main"), ("wasmsign3", "main"), ("rv-utils", "main"),
-        ("swibb", "main"), ("soda", "master"), ("embedded-io-convert", "master"),
-        ("codegen-utils", "master"), ("codegen-utils-common", "main"), ("pair", "master"),
-        ("asim", "main"), ("wasm-blitz", "main"), ("jsaw-core", "main"),
-        ("pidl", "master"), ("trampoline-rs", "master"), ("sha3-literal", "main"),
-        ("waco", "main"), ("pit", "master"), ("sh-secgen", "main"),
-        ("minicoro-awaiters", "main"), ("speet", "main"), ("yonet", "main"),
-        ("rebornpack", "master"), ("stream-sink", "master"), ("arena-traits", "main"),
-        ("metapatch", "main"), ("wars-pit-plugin", "main"), ("weevy", "main")
-    ]
-    
-    repos = [
-        {'name': name, 'default_branch': branch, 'full_name': f'portal-co/{name}'}
-        for name, branch in known_repos
-    ]
-    print(f"  Using fallback list with {len(repos)} repositories")
     return repos
 
 
@@ -404,8 +359,9 @@ def main():
     repos = discover_rust_repos(owner)
     
     if not repos:
-        print("No repositories found. Exiting.")
-        return
+        print("ERROR: No repositories found. Exiting.")
+        import sys
+        sys.exit(1)
     
     stats = {
         'total_repos': len(repos),
